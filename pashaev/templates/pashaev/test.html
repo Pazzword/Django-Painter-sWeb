@@ -1,0 +1,96 @@
+{% extends "pashaev/body.html" %}
+
+{% block title %}Bio{% endblock %}
+
+{% block content %}
+<style>
+section {
+    height: 100vh;
+    padding: 0 clamp(4rem, 12vw, 20rem);
+    display: grid;
+    place-content: center;
+
+    p {
+        font-size: clamp(2rem, 5vw, 8rem);
+    }
+
+    &:nth-of-type(1) {
+        border-bottom: 1px solid black;
+    }
+
+    &:nth-of-type(3) {
+        background: #ffff00;
+    }
+
+    &:nth-of-type(4) {
+        background: rgb(29, 29, 29);
+        color: white;
+    }
+}
+</style>
+
+<section>
+    <h1>About the artist.</h1>
+</section>
+
+<section>
+    <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="teal">Abu Pashaev, born in 1966 in Chechen-Aul, is a distinguished artist whose life journey shapes his profound creations. From serving in the Soviet Army to graduating in graphic design, Pashaev's diverse experiences manifest in his artwork. Seeking guidance from renowned Chechen artists and integrating martial arts philosophy, he crafted his style, "Wind." His graphic series, like "You Don't Know How Painful It Is!," explores inner worlds with titles such as "Scream" and "Apocalypse."</p>
+</section>
+
+<section>
+    <p class="reveal-type" data-bg-color="#b6b600" data-fg-color="black">Modern UI designers will expand their skillsets to include frontend.</p>
+</section>
+
+<section>
+    <p class="reveal-type" data-bg-color="#353535" data-fg-color="red">The web isn't static anymore, interactivity and motion now dominate.</p>
+</section>
+
+
+<script>
+
+gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.reveal-type')
+
+splitTypes.forEach((char,i) => {
+
+    const bg = char.dataset.bgColor
+    const fg = char.dataset.fgColor
+
+    const text = new SplitType(char, { types: 'chars'})
+
+    gsap.fromTo(text.chars, 
+        {
+            color: bg,
+        },
+        {
+            color: fg,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: char,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse'
+            }
+    })
+})
+
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+console.log(e)
+})
+
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+</script>
+{% endblock %}

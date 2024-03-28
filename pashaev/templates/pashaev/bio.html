@@ -1,0 +1,261 @@
+{% extends "pashaev/body.html" %}
+{% load static %}
+{% block title %}Bio{% endblock %}
+
+{% block content %}
+<head>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="{% static 'css/bio.css' %}">
+</head>
+<body>
+<div class="container-fluid">
+    <h2 class="text-center custom-heading "> "Nostalgia is a passing phrase of infinity." </h2>
+  </div>
+
+
+
+
+
+
+
+    <div class="row row-content">
+        <div class="col-lg-6">
+            <img src="{% static 'Images/avatar-circle.png' %}" alt="Abu Pashaev" class="img-fluid rounded" style="width: 80%;">
+        </div>
+        <div class="col-lg-6 text-font top-bio" style="margin-top: 150px;">
+            Abu Pashaev, is a distinguished artist whose life journey shapes his profound creations. From serving in the Soviet Army to graduating in graphic design, Pashaev's diverse experiences manifest in his artwork.<br>|<br> Seeking guidance from renowned Chechen artists and integrating martial arts philosophy, he crafted his style, "Wind." His graphic series, like "You Don't Know How Painful It Is!," explores inner worlds with titles such as "Scream" and "Apocalypse."
+        </div>
+    </div>
+    <hr class="custom-hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
+
+
+
+    <div class="white-container">
+        <h1>Where Art Meets Emotion, and Every Stroke Tells a Story.</h1>
+        {{ about }}
+    </div> 
+
+
+    <hr class="row row-content" class="custom-hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
+
+
+    <div class="row row-content">
+        <div class="col-lg-6 text-center" style="font-size: 20px; margin-top: 150px;">
+            <p>Pashaev's works express universal themes of pain, solitude, and the human condition, showcasing his ability to convey deep emotions through a meticulous artistic process. </p><br>
+            <p>His inaugural exhibition, "Atomic Heart of My Mom" (1992), marked the beginning of a significant artistic journey. Abu Pashaev emerges as an artist whose profound expressions resonate with the complexities of human existence.</p>
+        </div>  
+            <!-- Image Slider -->
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolStone.jpg' %}')">
+                        <img src="{% static 'Images/bio/schoolStone.jpg' %}" alt="Blue">
+                    </div>
+                    <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolCeramic.jpg' %}')">
+                        <img src="{% static 'Images/bio/schoolCeramic.jpg' %}" alt="Bridge">
+                    </div>
+                    <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper4.jpg' %}')">
+                        <img src="{% static 'newspapers/newspaper4.jpg' %}" alt="Back">
+                    </div>
+                    <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper5.jpg' %}')">
+                        <img src="{% static 'newspapers/newspaper5.jpg' %}" alt="Sun">
+                    </div>
+                </div>
+    
+            
+                <!-- Dots to count images -->
+                <div class="dots-container">
+                    {% for dot_index in dot_indexes %}
+                        <div class="dot" onclick="currentSlide({{ dot_index }})"></div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    
+
+
+    <hr class="custom-hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
+
+    <div class="cream-container">
+        <div class="left-section">
+            <img src="{% static 'Images/bio/school1.jpg' %}" alt="Image 10" class="image">
+        </div>
+        <div class="right-section">
+            <div class="text">
+                Discover the artistic world of Abu Pashaev.
+            </div>
+            <a href="/gallery"class="explore-button">Gallery</a>
+        </div>
+    </div>
+    
+
+    <hr class="custom-hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
+    <div class="freeman row row-content">
+        <div class="col-lg-6 order-lg-1">
+            <img src="{% static 'Images/freeman.png' %}" alt="Freeman" class="img rounded" style="width: 75%; position: relative;">
+        </div>
+        <div class="col-lg-6 order-lg-1 text-font">
+            <div class="sign">
+                {{ mod|linebreaksbr }}
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-lg-1">
+                    <img src="{% static 'Images/sign.png' %}" alt="Freeman" class="img rounded" style="width: 80%;">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img src="{% static 'Images/sign.png' %}" alt="Freeman" class="img rounded" style="width: 80%;">
+                </div>
+            </div>
+            <div class="sign">
+                {{ mod2 |linebreaksbr }}
+            </div>
+        </div>
+    </div>
+    
+    <hr class="custom-hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 20px 0;">
+    
+
+
+
+
+    
+    <div class="row row-content">
+        <div class="col-lg-6 mx-auto text-center" style="padding-top: 5%; font-size: 20px;">
+            <h1>Art Exhibitions</h1>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="bg-dark text-white text-font" style="width: 100%; padding: 20px;">
+    <table style="border-collapse: collapse; width: 80%; margin: 0 auto;">
+    
+    <tr>
+        <td>1992</td>
+        <td>Atomic Heart of My Mom</td>
+        <td>Grozny, Russia</td>
+    </tr>
+    <tr>
+        <td>1993</td>
+        <td>Premonition of the Civil War</td>
+        <td>Grozny, Russia</td>
+    </tr>
+    <tr>
+        <td>1996</td>
+        <td>Silent Protest Against Violence</td>
+        <td>Chechen-Aul, Russia</td>
+    </tr>
+    <tr>
+        <td>1997</td>
+        <td>Wounded Flowers</td>
+        <td>Chechen-Aul, Russia</td>
+    </tr>
+    <tr>
+        <td>1993</td>
+        <td>The Face of War</td>
+        <td>Nazran, Russia</td>
+    </tr>
+    <tr>
+        <td>2003</td>
+        <td>The Face of War</td>
+        <td>Prague, Czech Republic</td>
+    </tr>
+    <tr>
+        <td>2004</td>
+        <td>Optimistic Reflection of the Past</td>
+        <td>Grozny, Russia</td>
+    </tr>
+    <tr>
+        <td>2007</td>
+        <td>Peace to the Caucasus</td>
+        <td>Grozny, Russia</td>
+    </tr>
+    <tr>
+        <td>2008</td>
+        <td>Sochi - 2008</td>
+        <td>Sochi, Russia</td>
+    </tr>
+    <tr>
+        <td>2009</td>
+        <td>Chechen Artists at the State Duma</td>
+        <td>Moscow, Russia</td>
+    </tr>
+    <tr>
+        <td>2011</td>
+        <td>Artists from the Chechen Republic</td>
+        <td>Saratov City Duma, Russia</td>
+    </tr>
+    <tr>
+        <td>2011</td>
+        <td>Apotheosis of History (with V.V. Zauraev)</td>
+        <td>Grozny, Russia</td>
+    </tr>
+    <tr>
+        <td>2011</td>
+        <td>Scream in Art</td>
+        <td>Maykop, Russia</td>
+    </tr>
+    <tr>
+        <td>2012</td>
+        <td>Zonal Exhibition</td>
+        <td>Rostov-on-Don, Russia</td>
+    </tr>
+    <tr>
+        <td>2013</td>
+        <td>VIII International Art Symposium "Tales of Love"</td>
+        <td>Yelabuga, Russia</td>
+    </tr>
+    <tr>
+        <td>2013</td>
+        <td>Hand in Art</td>
+        <td>Maykop, Russia</td>
+    </tr>
+    <tr>
+        <td>2013</td>
+        <td>XI Regional Exhibition "Southern Russia"</td>
+        <td>Grozny, Russia</td>
+    </tr>
+    </table>
+</div>
+
+
+<hr class="custom-hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 100px 0;">
+<div class="row-bottom">
+    <div>
+        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
+    </div>
+    <div>
+        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
+    </div>
+    <div>
+        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
+    </div>
+    <div>
+        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
+    </div>
+</div>
+
+<div class="iconbutton">
+    <a href="#bio">
+      <!--Add the code here for the logo to appear and the icon to be actionable-->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+
+<!-- Enlarged Image Modal -->
+<div class="enlarged-modal" onclick="closeEnlarged()">
+    <span class="close-button" onclick="closeEnlarged()">&times;</span>
+    <img id="enlargedImg" alt="">
+</div>
+
+</body>
+
+
+
+<script src="{% static 'js/bioScript.js' %}"></script>
+{% endblock %}
+

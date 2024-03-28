@@ -1,9 +1,10 @@
-{% extends "body.html" %}
+{% extends "pashaev/body.html" %}
+{% load static %}
 {% block title %}HOME{% endblock %}
 {% block content %}
 <head>
     <!-- Other head elements -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 </head>
 
 <div class="container-fluid">
@@ -26,13 +27,13 @@
 
 <div class="cream-container">
     <div class="left-section">
-        <img src="{{ url_for('static', filename='Images/freeman.png') }}" alt="Image 10" class="image">
+        <img src="{% static 'Images/freeman.png' %}" alt="Image 10" class="image">
     </div>
     <div class="right-section">
-        <div class="text" style="margin-left: 40%; width: 80%; font-size: 24px;">
-            "Curious to learn more about the creative mind shaping these captivating artworks? Click below to explore the inspiring journey and unique perspective of our talented artist. "
+        <div class="text" style="margin-left: 40%; width: 80%; font-size: 18px; display: flex;">
+            In this artwork, one encounters a depiction from the series "An Esoteric Perspective on Ancestral Symbols". It portrays a figure resembling a thinker, with the wing of a bird and a lowered hand, as if supporting a fragment of a mountain where a tower stands. The scene invites contemplation through time and space of the origins of the depicted character's ancestors, the Sumerians and the Hurrians, representing a civilization that has faded into history. As an artist chronicler, the piece reflects a dreamlike vision, with signs resembling imprints suspended in the air, carrying cryptic information that eludes understanding, leaving viewers only able to speculate. This artwork serves as a metaphorical journey of self-discovery...
         </div>
-        <a href="https://www.google.com" class="explore-button textFont">About Artist</a>
+        <a href="/bio" class="explore-button textFont">About Artist</a>
     </div>
 </div>
 
@@ -41,26 +42,26 @@
 
 
 
-<div class="row row-content">
+<div class="row row-content" style="margin: 3%;">
     <div class="carouselText">
         An Esoteric Perspective on Ancestral Symbols
     </div>
     
 <main id="carousel">
     <div class="item">
-        <img src="{{ url_for('static', filename='Images/LatestIMG/Img1.jpg') }}" alt="Image 1">
+        <img src="{% static 'Images/LatestIMG/Img1.jpg' %}" alt="Image 1">
     </div>
     <div class="item">
-        <img src="{{ url_for('static', filename='Images/LatestIMG/Img2.jpg') }}" alt="Image 2">
+        <img src="{% static 'Images/LatestIMG/Img2.jpg' %}" alt="Image 2">
     </div>
     <div class="item">
-        <img src="{{ url_for('static', filename='Images/LatestIMG/Img3.jpg') }}" alt="Image 3">
+        <img src="{% static 'Images/LatestIMG/Img3.jpg' %}" alt="Image 3">
     </div>
     <div class="item">
-        <img src="{{ url_for('static', filename='Images/LatestIMG/Img4.jpg') }}" alt="Image 4">
+        <img src="{% static 'Images/LatestIMG/Img4.jpg' %}" alt="Image 4">
     </div>
     <div class="item">
-        <img src="{{ url_for('static', filename='Images/LatestIMG/Img5.jpg') }}" alt="Image 5">
+        <img src="{% static 'Images/LatestIMG/Img5.jpg' %}" alt="Image 5">
     </div>
 </main>
 </div>
@@ -69,13 +70,13 @@
 
 <div class="cream-container2 row-container">
     <div class="left-section2" style="margin-right: 13%;">
-        <div class="text2 textFont" style="font-size: 36px; color: #ec994b;">
-            "Discover the artistic world of Abu Pashaev."
+        <div class="text2 textFont" style="font-size: 30px; color: #ec994b;">
+            Discover the artistic world of Abu Pashaev by visiting gallery page.
         </div>
-        <button class="gallery-button textFont" >GALLERY</button>
+        <a href="/gallery/" class="gallery-button textFont">GALLERY</a>
     </div>
     <div class="right-section2">
-        <img src="{{ url_for('static', filename='Images/school.jpg') }}" alt="Image 10" class="image2">
+        <img src="{% static 'Images/school.jpg' %}" alt="Image 10" class="image2">
     </div>
 </div>
 
@@ -90,7 +91,7 @@
 </p>
 
 
-<button class="contact-button">Contact Us</button>
+<a href="/contacts" class="contact-button">Contact Us</a>
 
 
 <hr class="team_hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
@@ -119,6 +120,6 @@
     </a>
   </div>
 
-<script src="static/js/homeScript.js"></script>
+  <script src="{% static 'js/homeScript.js' %}"></script>
 
 {% endblock %}

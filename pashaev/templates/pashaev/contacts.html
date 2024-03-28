@@ -1,0 +1,119 @@
+{% extends "pashaev/body.html" %}
+{% load static %}
+{% block title %}Gallery{% endblock %}
+{% block content %}
+
+<style>
+    body {
+      background-color: #0a0a23 ;
+     /*background: url("/static/Images/brown.jpg") center / cover;*/
+  
+  }
+  
+  /* CSS for the grid layout */
+  .grid-container {
+      
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 10px;
+      padding: 10px;
+  }
+  
+  .grid-item {
+      position: relative;
+  }
+  
+  .image {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+  }
+  
+  /* CSS for the modal */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+  }
+  
+  .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  
+  .frame {
+      border: 4px solid #0a0a23; /* Frame border */
+      padding: 5px; /* Padding to separate image from frame */
+      background-color: #0a0a23; /* Frame background color */
+      display: inline-block; /* Make frame wrap around the image */
+      transition: transform 0.3s ease-in-out; /* Add smooth transition */
+  }
+  
+  .frame:hover {
+      transform: scale(1.05); /* Scale up the frame on hover */
+  }
+  
+  .gallery-button-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  /* Styling for span elements */
+  .gallery-span {
+      color: #bbb8b8;
+      font-size: 40px;
+      cursor: pointer;
+      padding: 20px;
+  }
+  
+  .image-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px;
+      text-align: center;
+      font-size: 14px;
+  }
+  
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}"> 
+</head>
+
+
+
+<div class="container-fluid">
+  <h3 class="text-center larger-name"> Abu Pashaev </h3>
+  <h1 class="text-center custom-heading">"An Esoteric Perspective on Ancestral Symbols"</h1>
+</div>
+
+{% endblock %}
