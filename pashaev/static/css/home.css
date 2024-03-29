@@ -208,13 +208,11 @@ div.item:nth-of-type(5) {
 
 
 /* Top Image Slider */
-.body2 {
-    
-position: flex;
+.body2 { 
+display: flex;
 height: 60vh;
 width: 74vw;
 background-color: #0a0a23; /* Fixed typo in background color */
-
 overflow: hidden;
 }
 
@@ -222,7 +220,7 @@ overflow: hidden;
     margin-top: 4%;
     display: flex;
     gap: 4vmin;
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%; /* Adjust this value to move the images down */
     transform: translate(-50%, -50%);
