@@ -114,17 +114,20 @@ div.item:nth-of-type(5) {
 .left-section {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
 .right-section {
+    margin-right: 20%;
     display: flex;
     flex-direction: column; /* Display text and button in a column */
     align-items: center;
+    flex: 1;
 }
 
 
 .right-section2 {
-
+    flex-direction: column;
     display: flex;
     align-items: center;
 }
@@ -159,7 +162,7 @@ div.item:nth-of-type(5) {
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px; /* Add space between text and button */
-    margin-right: 400px;
+    margin-right: 200px;
 }
 .text2 {
     text-align: center;
@@ -180,7 +183,7 @@ div.item:nth-of-type(5) {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 75px;
+
 }
 
 .explore-button:hover {
@@ -216,17 +219,17 @@ overflow: hidden;
 
 #image-track {
     margin-top: 4%;
-display: flex;
-gap: 4vmin;
-position: absolute;
-left: 50%;
-top: 50%; /* Adjust this value to move the images down */
-transform: translate(-50%, -50%);
-max-width: calc(100% - 8vmin); /* Ensure the track does not exceed the page width */
-overflow-x: auto; /* Add horizontal scrolling for overflow */
-scrollbar-width: none; /* Hide the scrollbar */
--ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
-user-select: none; /* -- Prevent image highlighting -- */
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%; /* Adjust this value to move the images down */
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 8vmin); /* Ensure the track does not exceed the page width */
+    overflow-x: auto; /* Add horizontal scrolling for overflow */
+    scrollbar-width: none; /* Hide the scrollbar */
+    -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
+    user-select: none; /* -- Prevent image highlighting -- */
 }
 
 /* Hide scrollbar for Firefox */
@@ -315,4 +318,4 @@ src: url('fonts/Comfortaa.ttf') format('truetype');
     background-color: #ec994b;
   }
 
-/*{border: 1px solid red;}*/
+*{border: 1px solid red;}*/
