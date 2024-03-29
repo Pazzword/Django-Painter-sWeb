@@ -141,19 +141,20 @@ div.item:nth-of-type(5) {
 
 
 /* Styles for the image */
-.image {
-    width: 500px; /* Adjust the width as needed */
+.image, .image2 {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 500px; /* Limit the maximum width */
     height: auto;
     border-radius: 20px; /* Adding curved edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding professional shadowing */
-    margin-left: 100px;
+    margin: 0 auto; /* Center the image horizontally */
 }
-.image2 {
-    width: 500px; /* Adjust the width as needed */
-    height: auto;
-    border-radius: 20px; /* Adding curved edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding professional shadowing */
-    margin-right: 1px;
+
+@media screen and (min-width: 768px) {
+    .image, .image2 {
+        width: 90%; /* Adjust the width for larger screens */
+        margin: 0; /* Reset margin for larger screens */
+    }
 }
 
 /* Styles for the bold text and explore button */
@@ -162,7 +163,7 @@ div.item:nth-of-type(5) {
     font-weight: bold;
     text-align: center;
     margin-bottom: 10px; /* Add space between text and button */
-    margin-right: 200px;
+
 }
 .text2 {
     text-align: center;
