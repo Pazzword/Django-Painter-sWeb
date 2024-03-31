@@ -214,9 +214,11 @@ height: 60vh;
 width: 74vw;
 background-color: #0a0a23; /* Fixed typo in background color */
 overflow: hidden;
+flex-wrap: wrap;
 }
 
 #image-track {
+    flex-wrap: wrap;
     margin-top: 4%;
     display: flex;
     gap: 4vmin;
