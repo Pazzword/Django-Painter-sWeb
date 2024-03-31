@@ -218,12 +218,10 @@ flex-wrap: wrap;
 }
 
 #image-track {
-    flex-wrap: wrap;
     margin-top: 4%;
     display: flex;
     gap: 4vmin;
     position: relative;
-    left: 50%;
     top: 50%; /* Adjust this value to move the images down */
     transform: translate(-50%, -50%);
     max-width: calc(100% - 8vmin); /* Ensure the track does not exceed the page width */
