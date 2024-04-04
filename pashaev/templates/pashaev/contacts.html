@@ -7,97 +7,103 @@
     body {
       background-color: #0a0a23 ;
      /*background: url("/static/Images/brown.jpg") center / cover;*/
-  
-  }
-  
-  /* CSS for the grid layout */
-  .grid-container {
-      
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      grid-gap: 10px;
-      padding: 10px;
-  }
-  
-  .grid-item {
-      position: relative;
-  }
-  
-  .image {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-  }
-  
-  /* CSS for the modal */
-  .modal {
-      display: none;
-      position: fixed;
-      z-index: 1;
-      padding-top: 50px;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0, 0, 0, 0.9);
-  }
-  
-  .modal-content {
-      margin: auto;
-      display: block;
-      width: 80%;
-      max-width: 700px;
-  }
-  
-  .close {
-      position: absolute;
-      top: 15px;
-      right: 35px;
-      color: #f1f1f1;
-      font-size: 40px;
-      font-weight: bold;
-      cursor: pointer;
-  }
-  
-  .frame {
-      border: 4px solid #0a0a23; /* Frame border */
-      padding: 5px; /* Padding to separate image from frame */
-      background-color: #0a0a23; /* Frame background color */
-      display: inline-block; /* Make frame wrap around the image */
-      transition: transform 0.3s ease-in-out; /* Add smooth transition */
-  }
-  
-  .frame:hover {
-      transform: scale(1.05); /* Scale up the frame on hover */
-  }
-  
-  .gallery-button-container {
-      width: 100%;
-      text-align: center;
-      margin-top: 20px;
-  }
-  
-  /* Styling for span elements */
-  .gallery-span {
-      color: #bbb8b8;
-      font-size: 40px;
-      cursor: pointer;
-      padding: 20px;
-  }
-  
-  .image-name {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 5px;
-      text-align: center;
-      font-size: 14px;
-  }
-  
+    }
+
+    .body2 { 
+display: flex;
+height: 60vh;
+width: 74vw;
+background-color: #0a0a23; /* Fixed typo in background color */
+overflow: hidden;
+flex-wrap: wrap;
+}
+
+#image-track {
+    margin-top: 4%;
+    display: flex;
+    gap: 4vmin;
+    position: relative;
+    left: 50%;
+    top: 50%; /* Adjust this value to move the images down */
+    transform: translate(-50%, -50%);
+    max-width: calc(100% - 8vmin); /* Ensure the track does not exceed the page width */
+    overflow-x: auto; /* Add horizontal scrolling for overflow */
+    scrollbar-width: none; /* Hide the scrollbar */
+    -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
+    user-select: none; /* -- Prevent image highlighting -- */
+}
+
+/* Hide scrollbar for Firefox */
+#image-track::-webkit-scrollbar {
+display: none;
+}
+
+#image-track > .images {
+width: 20vmin;
+height: 50vmin;
+object-fit: cover;
+object-position: 100% center;
+}
+    div.item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Adding smooth curved edges */
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding professional shadowing */
+}
+
+div.item img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    border-radius: 20px; /* Match the image border radius */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for the overlay */
+    opacity: 0; /* Initially invisible */
+}
+
+div.item:hover img::before {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+div.item:nth-of-type(1) {
+    --offset: 1;
+}
+
+div.item:nth-of-type(2) {
+    --offset: 2;
+}
+
+div.item:nth-of-type(3) {
+    --offset: 3;
+}
+
+div.item:nth-of-type(4) {
+    --offset: 4;
+}
+
+div.item:nth-of-type(5) {
+    --offset: 5;
+}
+
+
 </style>
 
 <head>
@@ -110,9 +116,72 @@
 
 
 
-<div class="container-fluid">
-  <h3 class="text-center larger-name"> Abu Pashaev </h3>
-  <h1 class="text-center custom-heading">"An Esoteric Perspective on Ancestral Symbols"</h1>
-</div>
 
-{% endblock %}
+
+<div class="d-flex body2">
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <img class="images" src="{% static 'Images/homeSlides/IMG26.jpg' %}" draggable="false" />
+        <img class="images" src="{% static 'Images/homeSlides/IMG27.jpg' %}" draggable="false" />
+        <img class="images" src="{% static 'Images/homeSlides/IMG28.jpg' %}" draggable="false" />
+        <img class="images" src="{% static 'Images/homeSlides/IMG29.jpg' %}" draggable="false" />
+        <img class="images" src="{% static 'Images/homeSlides/IMG30.jpg' %}" draggable="false" />
+      </div>      
+  </div>
+
+
+  <script>
+    const track = document.getElementById("image-track");
+    
+    let isDragging = false;
+    
+    const handleOnDown = e => {
+        if (!e.target.classList.contains('images')) {
+            isDragging = true;
+            track.dataset.mouseDownAt = e.clientX || e.touches[0].clientX;
+        }
+    };
+    
+    const handleOnUp = () => {
+        if (isDragging) {
+            track.dataset.mouseDownAt = "0";  
+            track.dataset.prevPercentage = track.dataset.percentage;
+            isDragging = false;
+        }
+    };
+    
+    const handleOnMove = e => {
+        if (isDragging) {
+            const mouseDelta = parseFloat(track.dataset.mouseDownAt) - (e.clientX || e.touches[0].clientX),
+                  maxDelta = window.innerWidth / 2;
+    
+            const percentage = (mouseDelta / maxDelta) * -100,
+                  nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+                  nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+    
+            track.dataset.percentage = nextPercentage;
+    
+            track.animate({
+                transform: `translate(${nextPercentage}%, -50%)`
+            }, { duration: 1200, fill: "forwards" });
+    
+            for (const image of track.getElementsByClassName("images")) {
+                image.animate({
+                    objectPosition: `${100 + nextPercentage}% center`
+                }, { duration: 1200, fill: "forwards" });
+            }
+        }
+    };
+    
+    window.addEventListener('mousedown', handleOnDown);
+    window.addEventListener('touchstart', handleOnDown);
+    window.addEventListener('mouseup', handleOnUp);
+    window.addEventListener('touchend', handleOnUp);
+    window.addEventListener('mousemove', handleOnMove);
+    window.addEventListener('touchmove', handleOnMove);
+    </script>
+    
+    
+
+
+
+  {% endblock %}
