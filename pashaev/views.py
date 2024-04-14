@@ -39,7 +39,6 @@ able to speculate. This artwork serves as a metaphorical journey of self-discove
 def pashaev(request):
     return render(request, "pashaev/pashaev_home.html", {})
 
-
 def bio(request):
     return render(
         request,
@@ -47,10 +46,8 @@ def bio(request):
         {"about": about, "mod": mod, "mod2": mod2},
     )
 
-
 def gallery(request):
     return render(request, "pashaev/gallery.html", {})
-
 
 def contacts(request):
     return render(request, "pashaev/contacts.html", {})

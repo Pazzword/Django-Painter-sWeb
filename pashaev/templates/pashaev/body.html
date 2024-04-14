@@ -14,25 +14,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Calibri:wght@400;300&display=swap" rel="stylesheet">
 </head>
 
-<body> 
  <!-- Main navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link" id="home" href="/">MAIN</a>
-            <a class="nav-item nav-link" id="bio" href="/bio">BIOGRAPHY</a>
-            <a class="nav-item nav-link" id="gallery" href="/gallery">GALLERY</a>
-            <a class="nav-item nav-link" id="contacts" href="/contacts">CONTACTS</a>
-        </div>
+ <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="navbar-nav mx-auto">
+        <a class="nav-item nav-link" id="home" href="/">MAIN</a>
+        <a class="nav-item nav-link" id="bio" href="/bio">BIOGRAPHY</a>
+        <a class="nav-item nav-link" id="gallery" href="/gallery">GALLERY</a>
+        <a class="nav-item nav-link" id="contacts" href="/contacts">CONTACTS</a>
+    </div>
+</nav>
 
-        <!-- Language Switch Button -->
 
-    </nav>
-
+<body> 
     <!-- Main content -->
     <div style="margin: 5%; margin-left: 13%; margin-right: 13%;">
         {% block content %}
         {% endblock %}
     </div>
+</body>
 
     <!-- Footer section -->
     <footer class="footer-section botBorder">
@@ -64,7 +63,7 @@
             </div>
         </div>
     </footer>
-</body>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 </html>

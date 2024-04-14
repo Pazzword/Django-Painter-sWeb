@@ -318,3 +318,27 @@ src: url('fonts/Comfortaa.ttf') format('truetype');
   }
 
 /*{border: 1px solid red;}*/
+
+.navbar-header {
+    position: relative;
+}
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: flex !important;
+}
+
+.bottom-0 {
+    bottom: 0 !important;
+}
+
+.end-0 {
+    right: 0 !important;
+}
+
+*{
+    border: 1px solid red; }/* Add a red border to all elements for visualization
+}   To check errors 
