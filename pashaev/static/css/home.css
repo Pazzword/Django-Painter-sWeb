@@ -339,6 +339,21 @@ src: url('fonts/Comfortaa.ttf') format('truetype');
     right: 0 !important;
 }
 
-*{
+
+/* Keyframes for 3D spinning animation */
+
+
+/* Apply disappearing and appearing animation to images */
+.disappearing-animation {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.disappearing-animation:hover {
+    opacity: 1;
+}
+
+
+/*{
     border: 1px solid red; }/* Add a red border to all elements for visualization
 }   To check errors 
