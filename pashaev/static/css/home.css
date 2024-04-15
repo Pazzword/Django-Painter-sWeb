@@ -209,12 +209,23 @@ div.item:nth-of-type(5) {
 
 /* Top Image Slider */
 .body2 { 
-display: flex;
-height: 60vh;
-width: 74vw;
-background-color: #0a0a23; /* Fixed typo in background color */
-overflow: hidden;
-flex-wrap: wrap;
+    display: flex;
+    height: 60vh;
+    width: 74vw;
+    background-color: #0a0a23; /* Fixed typo in background color */
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+/* Media query for smaller screens */
+@media (max-width: 576px) {
+    .body2 {
+        display: flex;
+        height: 20vh;
+        width: 74vw;
+        background-color: #0a0a23; /* Fixed typo in background color */
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
 }
 
 #image-track {
@@ -354,6 +365,6 @@ src: url('fonts/Comfortaa.ttf') format('truetype');
 }
 
 
-/*{
+*{
     border: 1px solid red; }/* Add a red border to all elements for visualization
 }   To check errors 
