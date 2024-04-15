@@ -47,14 +47,6 @@ body {
     }
 }
 
-*{
-  border: 1px solid red; }/* Add a red border to all elements for visualization
-}   To check errors 
-
-
-
-
-
 /* CSS for the grid layout */
 .grid-container {
   margin-left: 10%;
