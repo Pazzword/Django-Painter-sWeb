@@ -4,7 +4,9 @@
 {% block content %}
 <head>
     <!-- Other head elements -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 </head>
 
@@ -25,11 +27,11 @@
 
 <hr class="team_hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
 
-<div class="cream-container">
-    <div class="left-section">
+<div class="d-flex">
+    <div class="card-body w-100">
         <img src="{% static 'Images/freeman.png' %}" alt="Image 10" class="image">
     </div>
-    <div class="right-section">
+    <div class="card-body">
         <div class="text" style="width: 80%; font-size: 18px; display: flex;">
             In this artwork, one encounters a depiction from the series "An Esoteric Perspective on Ancestral Symbols". It portrays a figure resembling a thinker, with the wing of a bird and a lowered hand, as if supporting a fragment of a mountain where a tower stands. The scene invites contemplation through time and space of the origins of the depicted character's ancestors, the Sumerians and the Hurrians, representing a civilization that has faded into history. As an artist chronicler, the piece reflects a dreamlike vision, with signs resembling imprints suspended in the air, carrying cryptic information that eludes understanding, leaving viewers only able to speculate. This artwork serves as a metaphorical journey of self-discovery...
         </div>
