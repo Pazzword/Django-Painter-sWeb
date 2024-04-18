@@ -3,6 +3,8 @@ body {
    /*background: url("/static/Images/brown.jpg") center / cover;*/
 
 }
+
+/* Spinning Eagle CSS */
 .carousel-container {
     width: 50%; /* Adjust the width as needed */
     margin: 0 auto;
@@ -318,7 +320,7 @@ html {
   font-size: 48px; /* Adjust the font size as needed */
   color: rgb(255, 255, 255);
 }
-
+/* End Slider CSS */
 
 
 
