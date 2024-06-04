@@ -18,9 +18,9 @@ Encouraged by Grygoriev to incorporate elements of national ethnicity into their
 
 mod2 = """At the heart of these artworks lies a symbolic tapestry of imagery. The winged sun disk, a recurring motif, symbolizes the radiance of the sun and the warmth it brings, evoking feelings of tranquility and peace. Adjacent to it stands a towering structure—an architectural emblem representing human ingenuity and craftsmanship.
                                                                                                                                                         |
-On one side of the composition, the Kumgan—a vessel historically carried by women to transport water—takes center stage. Beyond its practical function, the Kumgan embodies profound symbolism, serving as a testament to compassion, femininity, and the nurturing essence of motherhood.
-                                                                                                                                                        |
-Conversely, the balalaika, known as "dechig pondar," occupies the opposite end of the composition—a poignant tribute to ethnic culture, philosophy, and wisdom. Through its melodic resonance, the balalaika encapsulates the soulful essence of tradition and heritage, inviting viewers to delve into its rich tapestry of meanings.
+On one side of the composition, the Kumgan—a vessel historically carried by women to transport water—takes center stage. Beyond its practical function, the Kumgan embodies profound symbolism, serving as a testament to compassion, femininity, and the nurturing essence of motherhood."""                                                                                                                                                 
+
+mod3 = """Conversely, the balalaika, known as "dechig pondar," occupies the opposite end of the composition—a poignant tribute to ethnic culture, philosophy, and wisdom. Through its melodic resonance, the balalaika encapsulates the soulful essence of tradition and heritage, inviting viewers to delve into its rich tapestry of meanings.
                                                                                                                                                         |
 Unified by a central pictogram element reminiscent of the sun's radiant energy, each artwork in the series serves as a testament to the artist's creative prowess and their profound connection to ancestral symbols. Through this captivating exploration, the artist invites viewers on a journey of introspection and discovery, where art becomes a conduit for understanding the complexities of the human condition."""
 
@@ -37,13 +37,13 @@ able to speculate. This artwork serves as a metaphorical journey of self-discove
 
 # Create your views here.
 def pashaev(request):
-    return render(request, "pashaev/pashaev_home.html", {})
+    return render(request, "pashaev/pashaev_home.html", {"about": about, "mod": mod, "mod2": mod2})
 
 def bio(request):
     return render(
         request,
         "pashaev/bio.html",
-        {"about": about, "mod": mod, "mod2": mod2},
+        {"about": about, "mod": mod, "mod2": mod, "mod3": mod3},
     )
 
 def gallery(request):

@@ -9,8 +9,13 @@
 </head>
 
 <div class="container-fluid">
-  <h3 class="text-center larger-name"> Art of Abu Pashaev </h3>
-  <h1 class="text-center custom-heading">"An Esoteric Perspective on Ancestral Symbols"</h1>
+  
+  <div class="container">
+      <div class="text-center" style="position: relative;">
+          <h1 class="larger-name"> Abu Pashaev </h1>
+      </div>
+  </div>
+  <hr class="team_hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
 </div>
 
 
@@ -210,16 +215,16 @@
 
 
 
-<hr class="horizontal-line">
 
-<div class="carousel-container">
+
+<!--<div class="carousel-container">
     <div class="carousel">
         <div class="slide">
             <img src="{% static 'Images/sign.png' %}" alt="Image 3">
         </div>
-        <!-- Add more slides as needed -->
+
     </div>
-</div>
+</div>-->
 
 <hr class="horizontal-line">
 
@@ -413,24 +418,7 @@
 </div>
 
 
-<hr class="horizontal-line">
 
-
-
-<div class="row-bottom" style="display: flex; justify-content: space-between; margin-left: 13%; margin-right: 13%;">
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
-    </div>
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
-    </div>
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
-    </div>
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="{% static 'Images/signGif.gif' %}" style="height: 120px; width: 120px;"></span></p>
-    </div>
-</div>
 
 <div class="iconbutton">
   <a href="#bio">
@@ -444,4 +432,7 @@
 
 <script src="{% static 'js/galleryScript.js' %}"></script>
 
+{% endblock %}
+
+{% block bottom_section %}
 {% endblock %}

@@ -3,119 +3,71 @@
 {% block title %}HOME{% endblock %}
 {% block content %}
 <head>
-    <!-- Other head elements -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 </head>
 
-
-<div class="container">
-    <div class="container">
-        <h1 class="text-center larger-name"> Abu Pashaev </h1>
-        <h2 class="text-center custom-heading "> "Nostalgia is a passing phrase of infinity." </h2>
+<body>
+    <div class="frame-container" style="background-color: #0a0a23; padding: 20px;">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <img src="{% static 'Images/signGif.gif' %}" alt="Logo" class="small-logo">
+            <h2 class="text-center custom-heading mx-3">"Nostalgia is a passing phrase of infinity."</h2>
+            <img src="{% static 'Images/signGif.gif' %}" alt="Logo" class="small-logo">
+        </div>
     </div>
-    <div class="col-12 body2">
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="images" src="{% static 'Images/homeSlides/IMG26.jpg' %}" draggable="false" />
-            <img class="images" src="{% static 'Images/homeSlides/IMG27.jpg' %}" draggable="false" />
-            <img class="images" src="{% static 'Images/homeSlides/IMG28.jpg' %}" draggable="false" />
-            <img class="images" src="{% static 'Images/homeSlides/IMG29.jpg' %}" draggable="false" />
-            <img class="images" src="{% static 'Images/homeSlides/IMG30.jpg' %}" draggable="false" />
-        </div>      
-    </div>
-</div>
-<hr class="team_hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
 
+    <hr class="custom-hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
 
-
-
-<div class="mx-1 my-3 wrapper">
-    <h3 class="text-centre">Element description</h3>
-    <div class="bg-white bg-opacity-25 px-5 py-3 rounded">
-        <div class="row">
-            <div class="card-body w-50">
-                <img src="{% static 'Images/freeman.png' %}" alt="Image 10" class="image">
+    <div class="white-frame">
+        <div class="row row-content">
+            <div class="col-lg-3">
+                <img src="{% static 'Images/avatar-circle.png' %}" alt="Abu Pashaev" class="img-fluid rounded">
             </div>
-            <div class="card-body w-50">
-                <img src="{% static 'Images/freeman.png' %}" alt="Image 10" class="image">
+            <div class="col-lg-6 text-font top-bio">
+                Abu Pashaev, is a distinguished artist whose life journey shapes his profound creations. From serving in the Soviet Army to graduating in graphic design, Pashaev's diverse experiences manifest in his artwork.<br>|<br> Seeking guidance from renowned Chechen artists and integrating martial arts philosophy, he crafted his style, "Wind." His graphic series, like "You Don't Know How Painful It Is!," explores inner worlds with titles such as "Scream" and "Apocalypse."
+            </div>
+            <div class="col-lg-2">
+                <img src="{% static 'Images/freeman.png' %}" alt="Abu Pashaev" class="img-fluid rounded">
             </div>
         </div>
-            
     </div>
-</div>
 
 
 
+    <hr class="team_hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
 
-
-
-
-<div class="d-flex">
-        <a href="/bio" class="explore-button textFont">About Artist</a>
-</div>
-
-
-<hr class="team_hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
-
-
-
-<div class="row row-content" style="margin: 3%;">
-    <div class="carouselText">
-        An Esoteric Perspective on Ancestral Symbols
-    </div>
-    
-    <main id="carousel">
-        <div class="item">
-            <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="Image 1">
+    <div class="row row-content" style="margin: 3%;">
+        <div class="carouselText">
+            An Esoteric Perspective on Ancestral Symbols
         </div>
-        <div class="item">
-            <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="Image 2">
-        </div>
-        <div class="item">
-            <img src="{% static 'Images/LatestIMG/IMG3.jpg' %}" alt="Image 3">
-        </div>
-        <div class="item">
-            <img src="{% static 'Images/LatestIMG/IMG4.jpg' %}" alt="Image 4">
-        </div>
-        <div class="item">
-            <img src="{% static 'Images/LatestIMG/IMG5.jpg' %}" alt="Image 5">
-        </div>
-    </main>
-</div>
-
         
-
-
-<hr class="team_hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 50px 0;">
-
-<div class="row-bottom" style="display: flex; justify-content: space-between; margin-left: 2%; margin-right: 2%;">
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="static/Images/signGif.gif" style="height: 120px; width: 120px;"></span></p>
+        <main id="carousel">
+            <div class="item">
+                <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="Image 1">
+            </div>
+            <div class="item">
+                <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="Image 2">
+            </div>
+            <div class="item">
+                <img src="{% static 'Images/LatestIMG/IMG3.jpg' %}" alt="Image 3">
+            </div>
+            <div class="item">
+                <img src="{% static 'Images/LatestIMG/IMG4.jpg' %}" alt="Image 4">
+            </div>
+            <div class="item">
+                <img src="{% static 'Images/LatestIMG/IMG5.jpg' %}" alt="Image 5">
+            </div>
+        </main>
     </div>
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="static/Images/signGif.gif" style="height: 120px; width: 120px;"></span></p>
-    </div>
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="static/Images/signGif.gif" style="height: 120px; width: 120px;"></span></p>
-    </div>
-    <div>
-        <p><span style="font-size:20px;"><img alt="Value creation" src="static/Images/signGif.gif" style="height: 120px; width: 120px;"></span></p>
-    </div>
-</div>
 
-<div class="iconbutton">
-    <a href="#home">
-      <!--Add the code here for the logo to appear and the icon to be actionable-->
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
-  </div>
-
-  <script src="{% static 'js/homeScript.js' %}">
-    
-  </script>
-
+    <div class="iconbutton">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+    </div>
+</body>
+<script src="{% static 'js/homeScript.js' %}"></script>
 {% endblock %}

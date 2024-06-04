@@ -1,5 +1,21 @@
 body {
-    background-color: #0a0a23;
+    background-image: url('/static/Images/brown.jpg');
+    background-size: cover; /* Cover the entire area of the body */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+.small-logo {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+}
+.white-frame {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border for a subtle frame effect */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 20px; /* Spacing inside the container */
+    margin-bottom: 20px; /* Space below the container */
+    border-radius: 8px; /* Optional: rounded corners */
 }
 
 main#carousel {
@@ -89,54 +105,6 @@ div.item:nth-of-type(5) {
 
 
 
-.cream-container {
-    background-color: #fff8e1; /* Cream color */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px; /* Adding curved edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding professional shadowing */
-    margin-top: 20px; /* Add space between hr and cream-container */
-}
-.cream-container2 {
-    background-color: #0a0a23; /* Cream color */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px; /* Adding curved edges */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding professional shadowing */
-    margin-top: 20px; /* Add space between hr and cream-container */
-}
-
-/* Styles for the left and right sections inside the container */
-.left-section {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.right-section {
-    margin-right: 20%;
-    display: flex;
-    flex-direction: column; /* Display text and button in a column */
-    align-items: center;
-    flex: 1;
-}
-
-
-.right-section2 {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-}
-
-.left-section2 {
-    display: flex;
-    flex-direction: column; /* Display text and button in a column */
-    align-items: center;
-}
 
 
 
@@ -175,87 +143,21 @@ div.item:nth-of-type(5) {
     margin-left: 200px;
 }
 
-.explore-button {
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 
+.text-font {
+    font-family: "Kalam-Regular";
+    src: url('fonts/Kalam-Regular.ttf') format('truetype');
+    font-weight: bold;
 }
 
-.explore-button:hover {
-    color: #aba7a7;
-    background-color: #333; /* Darker shade of black on hover */
+.top-bio {
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Comfortaa";
+    src: url('fonts/Comfortaa.ttf') format('truetype');
 }
 
-.gallery-button {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 200px;
-}
-
-
-
-
-/* Top Image Slider */
-.body2 { 
-    display: flex;
-    height: 60vh;
-    width: 74vw;
-    background-color: #0a0a23; /* Fixed typo in background color */
-    overflow: hidden;
-    flex-wrap: wrap;
-}
-/* Media query for smaller screens */
-@media (max-width: 576px) {
-    .body2 {
-        height: 20vh;
-    }
-}
-
-#image-track {
-    margin-top: 4%;
-    display: flex;
-    gap: 4vmin;
-    position: relative;
-    left: 50%;
-    top: 50%; /* Adjust this value to move the images down */
-    transform: translate(-50%, -50%);
-    max-width: calc(100% - 8vmin); /* Ensure the track does not exceed the page width */
-    overflow-x: auto; /* Add horizontal scrolling for overflow */
-    scrollbar-width: none; /* Hide the scrollbar */
-    -ms-overflow-style: none; /* Hide the scrollbar for IE/Edge */
-    user-select: none; /* -- Prevent image highlighting -- */
-}
-
-/* Hide scrollbar for Firefox */
-#image-track::-webkit-scrollbar {
-display: none;
-}
-
-#image-track > .images {
-width: 20vmin;
-height: 50vmin;
-object-fit: cover;
-object-position: 100% center;
-}
-
-
-.container {
-max-width: 124rem;
-padding: 0 1rem;
-margin: 0 auto;
-}
 
 .text-center {
 text-align: center;
@@ -266,9 +168,8 @@ text-align: center
 }
 
 .custom-heading {
-font-size: 24px;
+font-size: 34px;
 color: #ec994b;
-
 }
 
 .p {
@@ -319,11 +220,10 @@ src: url('fonts/Comfortaa.ttf') format('truetype');
     bottom: 3%;
     cursor: pointer;
   }
+
 .iconbutton:hover{
     background-color: #ec994b;
   }
-
-
 
 .navbar-header {
     position: relative;
@@ -349,15 +249,7 @@ src: url('fonts/Comfortaa.ttf') format('truetype');
 /* Keyframes for 3D spinning animation */
 
 
-/* Apply disappearing and appearing animation to images */
-.disappearing-animation {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
 
-.disappearing-animation:hover {
-    opacity: 1;
-}
 
 
 /*{
