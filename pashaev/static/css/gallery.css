@@ -107,6 +107,17 @@ body {
   transition: transform 0.3s ease-in-out;
 }
 
+.horizontal-gallery {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.horizontal-gallery .grid-item {
+  flex: 0 0 auto;
+}
+
 .frame:hover {
   transform: scale(1.05);
 }

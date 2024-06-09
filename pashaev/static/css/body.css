@@ -6,8 +6,8 @@
 }
 
 body {
-    background-size: auto;
-    background-position: auto;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,11 +17,13 @@ body {
 
 .navbar {
     display: flex;
-    background-color: #4f262f; /* Creamy white color */
+    background-color: #4f262f;
     padding: 15px 0;
     border-bottom: 1px solid #d2d2d2;
     margin: 0;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .navbar-nav {
@@ -56,17 +58,59 @@ body {
 }
 
 .footer-section {
-    background-color: #0a0a23; /* Ensuring consistent background color */
-    padding: 20px;
-    text-align: center;
+    background-color: #0a0a23;
+    padding: 20px 0;
     color: #ffffff;
     font-size: 15px;
     font-weight: bold;
-    margin-top: auto;
 }
 
-.footer-section a {
-    color: #ffffff;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    margin-right: 20px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer-icons a {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #ec994b;
+    text-decoration: none;
+}
+
+.footer-icons img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+        justify-content: space-around;
+    }
 }
 
 .social {
@@ -87,9 +131,11 @@ body {
 }
 
 .bottom-section {
-    background-color: #0a0a23; /* Ensuring consistent background color */
+    background-color: #0a0a23;
     color: white;
     padding: 20px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .page__footer-border {
@@ -107,7 +153,7 @@ body {
 }
 
 .text-twitter {
-    color: #1da1f2;
+    color: #ec994b;
 }
 
 .text-instagram {
@@ -128,7 +174,8 @@ body {
 }
 .row-bottom {
     display: flex;
-    justify-content: space-around; /* This ensures equal spacing */
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -143,4 +190,21 @@ body {
 .page__footer-border .row > div {
     flex: 1; /* Ensures each column takes equal space */
     margin: 0 10px; /* Adds margin between the columns */
+}
+
+.gif-container {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .gif-container {
+        width: 25%;
+    }
+}
+
+.responsive-gif {
+    width: 100%;
+    height: auto;
 }
