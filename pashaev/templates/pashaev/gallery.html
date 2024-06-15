@@ -1,6 +1,7 @@
 {% extends "pashaev/body.html" %}
 {% load static %}
-{% block title %}Gallery{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Gallery" %}{% endblock %}
 {% block content %}
 
 <head>
@@ -31,7 +32,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                    "Reflected Past Through Time and Space"<br>
+                    {% trans "Reflected Past Through Time and Space" %}<br>
                     1999
                     
                 </h2>
@@ -56,7 +57,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                    "Contemplation Through Time and Space"<br>
+                    {% trans "Contemplation Through Time and Space" %}<br>
                     1994
                 </h2>
                 <h3 class="picture-rating">
@@ -80,7 +81,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                    "Date by the Erzi Towers"<br>
+                    {% trans "Date by the Erzi Towers" %}<br>
                     1996
                 </h2>
                 <h3 class="picture-rating">
@@ -104,7 +105,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                    "The Past Reflected in the Present"<br>
+                    {% trans "The Past Reflected in the Present" %}<br>
                     1994
                 </h2>
                 <h3 class="picture-rating">
@@ -128,7 +129,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                "Interrupted Flight"<br>
+                {% trans "Interrupted Flight" %}<br>
                 1994
                 </h2>
                 <h3 class="picture-rating">
@@ -152,7 +153,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                  "Spring"<br>
+                  {% trans "Spring" %}<br>
                   2018
                 </h2>
                 <h3 class="picture-rating">
@@ -176,7 +177,7 @@
             <div class="tranding-slide-content">
               <div class="tranding-slide-content-bottom">
                 <h2 class="">
-                  "The Tree"<br>
+                  {% trans "The Tree" %}<br>
                   2000
                 </h2>
                 <h3 class="picture-rating">
@@ -213,194 +214,181 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </div>
 
-
-
-
-
-<!--<div class="carousel-container">
-    <div class="carousel">
-        <div class="slide">
-            <img src="{% static 'Images/sign.png' %}" alt="Image 3">
-        </div>
-
-    </div>
-</div>-->
-
 <hr class="horizontal-line">
 
 <div class="grid-container fluid">
   <div class="grid-item">
       <div class="frame">
           <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="Image 1" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG1.jpg' %}', 'Image 1')">
-          <div class="image-name">"Contemplation through Time and Space" 1993</div>
+          <div class="image-name">{% trans "Contemplation through Time and Space" %} 1993</div>
         </div>
   </div>
   <div class="grid-item">
     <div class="frame">
         <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="Image 2" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG2.jpg' %}', 'Image 2')">
-        <div class="image-name">"Goryanka" 1994</div>
+        <div class="image-name">{% trans "Goryanka" %} 1994</div>
       </div>
   </div>
   <div class="grid-item">
     <div class="frame">
         <img src="{% static 'Images/LatestIMG/IMG3.jpg' %}" alt="Image 3" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG3.jpg' %}', 'Image 3')">
-        <div class="image-name">"Variant: Dream in the Jade Pavilion" 2021</div>
+        <div class="image-name">{% trans "Variant: Dream in the Jade Pavilion" %} 2021</div>
       </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG4.jpg' %}" alt="Image 4" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG4.jpg' %}', 'Image 4')">
-      <div class="image-name">"Inside Metamorphosis" 2016</div>
+      <div class="image-name">{% trans "Inside Metamorphosis" %} 2016</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG5.jpg' %}" alt="Image 5" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG5.jpg' %}', 'Image 5')">
-      <div class="image-name">"Dream in the Jade Pavilion" 2024</div>
+      <div class="image-name">{% trans "Dream in the Jade Pavilion" %} 2024</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG6.jpg' %}" alt="Image 6" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG6.jpg' %}', 'Image 6')">
-      <div class="image-name">Illustration for the poem: "Autumn, the Wind's Breath, Fallen Leaves, Yet Spring Blossoms in My Heart…" 2009</div>
+      <div class="image-name">{% trans "Illustration for the poem: 'Autumn, the Wind's Breath, Fallen Leaves, Yet Spring Blossoms in My Heart…'" %} 2009</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG25.jpg' %}" alt="Image 25" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG25.jpg' %}', 'Image 25')">
-      <div class="image-name">"Genealogical tree" 2005</div>
+      <div class="image-name">{% trans "Genealogical tree" %} 2005</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG8.jpg' %}" alt="Image 8" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG8.jpg' %}', 'Image 8')">
-      <div class="image-name">"Reflected Past Across Time and Space" 1999</div>
+      <div class="image-name">{% trans "Reflected Past Across Time and Space" %} 1999</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG9.jpg' %}" alt="Image 9" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG9.jpg' %}', 'Image 9')">
-      <div class="image-name">"Mirage" 1992</div>
+      <div class="image-name">{% trans "Mirage" %} 1992</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG10.jpg' %}" alt="Image 10" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG10.jpg' %}', 'Image 10')">
-      <div class="image-name">"Transformation of Narcissus and Echo" 1996</div>
+      <div class="image-name">{% trans "Transformation of Narcissus and Echo" %} 1996</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG11.jpg' %}" alt="Image 11" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG11.jpg' %}', 'Image 11')">
-      <div class="image-name">"Time Is Relentless" 1993</div>
+      <div class="image-name">{% trans "Time Is Relentless" %} 1993</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG12.jpg' %}" alt="Image 12" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG12.jpg' %}', 'Image 12')">
-      <div class="image-name">"Petroglyphs" 1994</div>
+      <div class="image-name">{% trans "Petroglyphs" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG13.jpg' %}" alt="Image 13" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG13.jpg' %}', 'Image 13')">
-      <div class="image-name">"Nostalgia Transcending the Phrase of Infinity" 1993</div>
+      <div class="image-name">{% trans "Nostalgia Transcending the Phrase of Infinity" %} 1993</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG14.jpg' %}" alt="Image 14" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG14.jpg' %}', 'Image 14')">
-      <div class="image-name">"Tree" 2000</div>
+      <div class="image-name">{% trans "Tree" %} 2000</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG15.jpg' %}" alt="Image 15" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG15.jpg' %}', 'Image 15')">
-      <div class="image-name">"Spring" 2018</div>
+      <div class="image-name">{% trans "Spring" %} 2018</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG16.jpg' %}" alt="Image 16" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG16.jpg' %}', 'Image 16')">
-      <div class="image-name">"Interrupted Flight" 1994</div>
+      <div class="image-name">{% trans "Interrupted Flight" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
         <img src="{% static 'Images/LatestIMG/IMG17.jpg' %}" alt="Image 17" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG17.jpg' %}', 'Image 17')">
-        <div class="image-name">"Past Reflected in the Present" 1994</div>
+        <div class="image-name">{% trans "Past Reflected in the Present" %} 1994</div>
       </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG18.jpg' %}" alt="Image 18" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG18.jpg' %}', 'Image 18')">
-      <div class="image-name">"Rendezvous by the Towers of Erzi" 1996</div>
+      <div class="image-name">{% trans "Rendezvous by the Towers of Erzi" %} 1996</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG19.jpg' %}" alt="Image 19" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG19.jpg' %}', 'Image 19')">
-      <div class="image-name">"Contemplation Through Time and Space 2" 1994</div>
+      <div class="image-name">{% trans "Contemplation Through Time and Space 2" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG21.jpg' %}" alt="Image 21" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG21.jpg' %}', 'Image 21')">
-      <div class="image-name">"Nostalgia Transitioning into the Phase of Infinity" 1994</div>
+      <div class="image-name">{% trans "Nostalgia Transitioning into the Phase of Infinity" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG22.jpg' %}" alt="Image 22" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG22.jpg' %}', 'Image 22')">
-      <div class="image-name">"The Warrior in a Burqa Contemplating Petroglyphs" 1994</div>
+      <div class="image-name">{% trans "The Warrior in a Burqa Contemplating Petroglyphs" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG23.jpg' %}" alt="Image 23" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG23.jpg' %}', 'Image 23')">
-      <div class="image-name">"Tower" 1994</div>
+      <div class="image-name">{% trans "Tower" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG24.jpg' %}" alt="Image 24" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG24.jpg' %}', 'Image 24')">
-      <div class="image-name">"Seppuku" 2024</div>
+      <div class="image-name">{% trans "Seppuku" %} 2024</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG7.jpg' %}" alt="Image 7" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG7.jpg' %}', 'Image 7')">
-      <div class="image-name">"You and Me" 2019</div>
+      <div class="image-name">{% trans "You and Me" %} 2019</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG26.jpg' %}" alt="Image 26" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG26.jpg' %}', 'Image 26')">
-      <div class="image-name">"Genealogical Tree" 1994</div>
+      <div class="image-name">{% trans "Genealogical Tree" %} 1994</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG27.jpg' %}" alt="Image 27" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG27.jpg' %}', 'Image 27')">
-      <div class="image-name">"Dream as if There Were No Tomorrow" 2004</div>
+      <div class="image-name">{% trans "Dream as if There Were No Tomorrow" %} 2004</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG28.jpg' %}" alt="Image 28" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG28.jpg' %}', 'Image 28')">
-      <div class="image-name">"Istang art. fluid execution" 2016</div>
+      <div class="image-name">{% trans "Istang art. fluid execution" %} 2016</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG29.jpg' %}" alt="Image 29" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG29.jpg' %}', 'Image 29')">
-      <div class="image-name">"Late for Spring" 2019</div>
+      <div class="image-name">{% trans "Late for Spring" %} 2019</div>
     </div>
   </div>
   <div class="grid-item">
     <div class="frame">
       <img src="{% static 'Images/LatestIMG/IMG30.jpg' %}" alt="Image 30" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG30.jpg' %}', 'Image 30')">
-      <div class="image-name">"Hunt" 2000</div>
+      <div class="image-name">{% trans "Hunt" %} 2000</div>
     </div>
   </div>
 </div>
@@ -416,9 +404,6 @@
       <span class="gallery-span" onclick="nextImage()">&#8594;</span> <!-- Right arrow -->
   </div>
 </div>
-
-
-
 
 <div class="iconbutton">
   <a href="#bio">

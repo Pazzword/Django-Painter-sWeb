@@ -1,6 +1,7 @@
 {% extends "pashaev/body.html" %}
 {% load static %}
-{% block title %}HOME{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "HOME" %}{% endblock %}
 {% block content %}
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,7 @@
     <div class="frame-container">
         <div class="container-fluid d-flex justify-content-center align-items-center">
             <img src="{% static 'Images/signGif.gif' %}" alt="Logo" class="small-logo">
-            <h2 class="text-center custom-heading mx-3">"Nostalgia is a passing phrase of infinity."</h2>
+            <h2 class="text-center custom-heading mx-3">{% trans "Nostalgia is a passing phrase of infinity." %}</h2>
             <img src="{% static 'Images/signGif.gif' %}" alt="Logo" class="small-logo">
         </div>
     </div>
@@ -25,7 +26,7 @@
                 <img src="{% static 'Images/avatar-circle.png' %}" alt="Abu Pashaev" class="img-fluid rounded">
             </div>
             <div class="col-lg-6 text-font top-bio">
-                Abu Pashaev, is a distinguished artist whose life journey shapes his profound creations. From serving in the Soviet Army to graduating in graphic design, Pashaev's diverse experiences manifest in his artwork.<br>|<br> Seeking guidance from renowned Chechen artists and integrating martial arts philosophy, he crafted his style, "Wind." His graphic series, like "You Don't Know How Painful It Is!," explores inner worlds with titles such as "Scream" and "Apocalypse."
+                {% trans "Abu Pashaev is a distinguished artist whose life journey shapes his profound creations. From serving in the Soviet Army to graduating in graphic design, Pashaev's diverse experiences manifest in his artwork. Seeking guidance from renowned Chechen artists and integrating martial arts philosophy, he crafted his style, 'Wind.' His graphic series, like 'You Don't Know How Painful It Is!,' explores inner worlds with titles such as 'Scream' and 'Apocalypse.'" %}
             </div>
             <div class="col-lg-2">
                 <img src="{% static 'Images/freeman.png' %}" alt="Abu Pashaev" class="img-fluid rounded">
@@ -37,24 +38,24 @@
 
     <div class="row row-content carousel-container">
         <div class="carouselText">
-            An Esoteric Perspective on Ancestral Symbols
+            {% trans "An Esoteric Perspective on Ancestral Symbols" %}
         </div>
         
         <main id="carousel">
             <div class="item">
-                <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="Image 1">
+                <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="{% trans "Image 1" %}">
             </div>
             <div class="item">
-                <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="Image 2">
+                <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="{% trans "Image 2" %}">
             </div>
             <div class="item">
-                <img src="{% static 'Images/LatestIMG/IMG3.jpg' %}" alt="Image 3">
+                <img src="{% static 'Images/LatestIMG/IMG3.jpg' %}" alt="{% trans "Image 3" %}">
             </div>
             <div class="item">
-                <img src="{% static 'Images/LatestIMG/IMG4.jpg' %}" alt="Image 4">
+                <img src="{% static 'Images/LatestIMG/IMG4.jpg' %}" alt="{% trans "Image 4" %}">
             </div>
             <div class="item">
-                <img src="{% static 'Images/LatestIMG/IMG5.jpg' %}" alt="Image 5">
+                <img src="{% static 'Images/LatestIMG/IMG5.jpg' %}" alt="{% trans "Image 5" %}">
             </div>
         </main>
     </div>

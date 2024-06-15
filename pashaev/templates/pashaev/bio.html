@@ -1,6 +1,7 @@
 {% extends "pashaev/body.html" %}
 {% load static %}
-{% block title %}Bio{% endblock %}
+{% load i18n %}
+{% block title %}{% trans "Bio" %}{% endblock %}
 
 {% block content %}
 <head>
@@ -11,8 +12,15 @@
 <body>
     <div class="frame-container">
         <div class="white-container">
-            <h1>Where Art Meets Emotion, and Every Stroke Tells a Story.</h1>
-            <p>{{ about }}</p>
+            <h1>{% trans "Where Art Meets Emotion, and Every Stroke Tells a Story." %}</h1>
+            <p>{% blocktrans %}Abu Pashaev, born in 1966 in Chechen-Aul, is a distinguished artist whose life journey shapes 
+            his profound creations. From serving in the Soviet Army to graduating in graphic design, Pashaev's diverse 
+            experiences manifest in his artwork. Seeking guidance from renowned Chechen artists and integrating martial arts philosophy, 
+            he crafted his style, 'Wind.' His graphic series, like 'You Don't Know How Painful It Is!,' explores inner worlds 
+            with titles such as 'Scream' and 'Apocalypse.' Pashaev's works express universal themes of pain, solitude, and the human condition, 
+            showcasing his ability to convey deep emotions through a meticulous artistic process. His inaugural exhibition, 
+            'Atomic Heart of My Mom' (1992), marked the beginning of a significant artistic journey. Abu Pashaev emerges as an artist 
+            whose profound expressions resonate with the complexities of human existence.{% endblocktrans %}</p>
         </div>
         <div class="row row-content">
             <div class="col-lg-3">
@@ -20,7 +28,13 @@
             </div>
             <div class="col text-font top-bio text-white">
                 <div class="sign">
-                    {{ mod|linebreaksbr }}
+                    {% blocktrans %}The artist's series of works, titled 'Esoteric Perspective on Ancestral Symbols,' is a profound exploration inspired by their late mentor, Vsevolod Semenych Grygoriev. Rooted in the artist's journey of self-discovery during the early 90s, these pieces reflect their deep immersion in avant-garde movements, particularly surrealism, as they sought to articulate their unique vision through art.{% endblocktrans %}
+                </div>
+                <div class="sign">
+                    {% blocktrans %}Drawing from their academic background in graphic design at the Chechen State Pedagogical Institute, the artist received pivotal guidance from Grygoriev, a seasoned artist with a rich theatrical background. Under Grygoriev's mentorship, the artist gained insights into the transformative impact of artists like Salvador Dalí, who infused surrealism with their distinct worldview, shaping the artistic landscape of both the West and Europe.{% endblocktrans %}
+                </div>
+                <div class="sign">
+                    {% blocktrans %}Encouraged by Grygoriev to incorporate elements of national ethnicity into their work, the artist embarked on a creative journey marked by profound symbolism and cultural significance. Each piece in the series reflects a meticulous fusion of artistic expression and ancestral heritage, aimed at capturing the essence of the human experience.{% endblocktrans %}
                 </div>
             </div>
             <div class="col-lg-3">
@@ -34,23 +48,23 @@
     <div class="frame-container">
         <div class="row row-content align-items-center" style="min-height: 500px;">
             <div class="col-lg-6 text-center" style="font-size: 20px;">
-                <p>Pashaev's works express universal themes of pain, solitude, and the human condition, showcasing his ability to convey deep emotions through a meticulous artistic process. </p><br>
-                <p>His inaugural exhibition, "Atomic Heart of My Mom" (1992), marked the beginning of a significant artistic journey. Abu Pashaev emerges as an artist whose profound expressions resonate with the complexities of human existence.</p>
+                <p>{% trans "Pashaev's works express universal themes of pain, solitude, and the human condition, showcasing his ability to convey deep emotions through a meticulous artistic process." %}</p><br>
+                <p>{% trans "His inaugural exhibition, 'Atomic Heart of My Mom' (1992), marked the beginning of a significant artistic journey. Abu Pashaev emerges as an artist whose profound expressions resonate with the complexities of human existence." %}</p>
             </div>
             <div class="col-lg-6">
                 <div class="slider-container" style="max-width: 90%; height: 500px;">
                     <div class="slides">
                         <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolStone.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'Images/bio/schoolStone.jpg' %}" alt="Blue" style="height: 100%;">
+                            <img src="{% static 'Images/bio/schoolStone.jpg' %}" alt="School Stone" style="height: 100%;">
                         </div>
                         <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolCeramic.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'Images/bio/schoolCeramic.jpg' %}" alt="Bridge" style="height: 100%;">
+                            <img src="{% static 'Images/bio/schoolCeramic.jpg' %}" alt="School Ceramic" style="height: 100%;">
                         </div>
                         <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper4.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'newspapers/newspaper4.jpg' %}" alt="Back" style="height: 100%;">
+                            <img src="{% static 'newspapers/newspaper4.jpg' %}" alt="Newspaper 4" style="height: 100%;">
                         </div>
                         <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper5.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'newspapers/newspaper5.jpg' %}" alt="Sun" style="height: 100%;">
+                            <img src="{% static 'newspapers/newspaper5.jpg' %}" alt="Newspaper 5" style="height: 100%;">
                         </div>
                     </div>
                     <div class="dots-container">
@@ -69,18 +83,22 @@
         <div class="freeman row row-content">
             <div class="col-lg-12 order-lg-1 text-font">
                 <div class="sign">
-                    {{ mod2|linebreaksbr }}
+                    {% blocktrans %}In this artwork, one encounters a depiction from the series 'An Esoteric Perspective on 
+                    Ancestral Symbols', specifically the right part of the triptych. It portrays a figure resembling a thinker, 
+                    with the wing of a bird and a lowered hand, as if supporting a fragment of a mountain where a tower stands, 
+                    alongside a flying winged sun disk. The scene invites contemplation through time and space of the origins 
+                    of the depicted character's ancestors, the Sumerians and the Hurrians, representing a civilization that has 
+                    faded into history. As an artist chronicler, the piece reflects a dreamlike vision, with signs resembling 
+                    imprints suspended in the air, carrying cryptic information that eludes understanding, leaving viewers only 
+                    able to speculate. This artwork serves as a metaphorical journey of self-discovery...{% endblocktrans %}
                 </div>
                 <div class="row">
                     <div class="col-lg-6 order-lg-1">
-                        <img src="{% static 'Images/sign.png' %}" alt="Freeman" class="img rounded" style="width: 80%;">
+                        <img src="{% static 'Images/sign.png' %}" alt="Freeman 1" class="img rounded" style="width: 80%;">
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <img src="{% static 'Images/sign.png' %}" alt="Freeman" class="img rounded" style="width: 80%;">
+                        <img src="{% static 'Images/sign.png' %}" alt="Freeman 2" class="img rounded" style="width: 80%;">
                     </div>
-                </div>
-                <div class="sign">
-                    {{ mod3|linebreaksbr }}
                 </div>
             </div>
         </div>
@@ -90,116 +108,115 @@
 
     <div class="row row-content">
         <div class="col-lg-6 mx-auto text-center" style="padding-top: 5%; font-size: 20px;">
-            <h1>Art Exhibitions</h1>
+            <h1>{% trans "Art Exhibitions" %}</h1>
         </div>
     </div>
-</div>
 
-<div class="bg-dark text-white text-font" style="width: 100%; padding: 20px;">
-    <table style="border-collapse: collapse; width: 80%; margin: 0 auto;">
-        <tr>
-            <td>1992</td>
-            <td>Atomic Heart of My Mom</td>
-            <td>Grozny, Russia</td>
-        </tr>
-        <tr>
-            <td>1993</td>
-            <td>Premonition of the Civil War</td>
-            <td>Grozny, Russia</td>
-        </tr>
-        <tr>
-            <td>1996</td>
-            <td>Silent Protest Against Violence</td>
-            <td>Chechen-Aul, Russia</td>
-        </tr>
-        <tr>
-            <td>1997</td>
-            <td>Wounded Flowers</td>
-            <td>Chechen-Aul, Russia</td>
-        </tr>
-        <tr>
-            <td>1993</td>
-            <td>The Face of War</td>
-            <td>Nazran, Russia</td>
-        </tr>
-        <tr>
-            <td>2003</td>
-            <td>The Face of War</td>
-            <td>Prague, Czech Republic</td>
-        </tr>
-        <tr>
-            <td>2004</td>
-            <td>Optimistic Reflection of the Past</td>
-            <td>Grozny, Russia</td>
-        </tr>
-        <tr>
-            <td>2007</td>
-            <td>Peace to the Caucasus</td>
-            <td>Grozny, Russia</td>
-        </tr>
-        <tr>
-            <td>2008</td>
-            <td>Sochi - 2008</td>
-            <td>Sochi, Russia</td>
-        </tr>
-        <tr>
-            <td>2009</td>
-            <td>Chechen Artists at the State Duma</td>
-            <td>Moscow, Russia</td>
-        </tr>
-        <tr>
-            <td>2011</td>
-            <td>Artists from the Chechen Republic</td>
-            <td>Saratov City Duma, Russia</td>
-        </tr>
-        <tr>
-            <td>2011</td>
-            <td>Apotheosis of History (with V.V. Zauraev)</td>
-            <td>Grozny, Russia</td>
-        </tr>
-        <tr>
-            <td>2011</td>
-            <td>Scream in Art</td>
-            <td>Maykop, Russia</td>
-        </tr>
-        <tr>
-            <td>2012</td>
-            <td>Zonal Exhibition</td>
-            <td>Rostov-on-Don, Russia</td>
-        </tr>
-        <tr>
-            <td>2013</td>
-            <td>VIII International Art Symposium "Tales of Love"</td>
-            <td>Yelabuga, Russia</td>
-        </tr>
-        <tr>
-            <td>2013</td>
-            <td>Hand in Art</td>
-            <td>Maykop, Russia</td>
-        </tr>
-        <tr>
-            <td>2013</td>
-            <td>XI Regional Exhibition "Southern Russia"</td>
-            <td>Grozny, Russia</td>
-        </tr>
-    </table>
-</div>
+    <div class="bg-dark text-white text-font" style="width: 100%; padding: 20px;">
+        <table style="border-collapse: collapse; width: 80%; margin: 0 auto;">
+            <tr>
+                <td>1992</td>
+                <td>{% trans "Atomic Heart of My Mom" %}</td>
+                <td>{% trans "Grozny, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td>{% trans "Premonition of the Civil War" %}</td>
+                <td>{% trans "Grozny, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>1996</td>
+                <td>{% trans "Silent Protest Against Violence" %}</td>
+                <td>{% trans "Chechen-Aul, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td>{% trans "Wounded Flowers" %}</td>
+                <td>{% trans "Chechen-Aul, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>1993</td>
+                <td>{% trans "The Face of War" %}</td>
+                <td>{% trans "Nazran, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2003</td>
+                <td>{% trans "The Face of War" %}</td>
+                <td>{% trans "Prague, Czech Republic" %}</td>
+            </tr>
+            <tr>
+                <td>2004</td>
+                <td>{% trans "Optimistic Reflection of the Past" %}</td>
+                <td>{% trans "Grozny, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2007</td>
+                <td>{% trans "Peace to the Caucasus" %}</td>
+                <td>{% trans "Grozny, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>{% trans "Sochi - 2008" %}</td>
+                <td>{% trans "Sochi, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2009</td>
+                <td>{% trans "Chechen Artists at the State Duma" %}</td>
+                <td>{% trans "Moscow, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>{% trans "Artists from the Chechen Republic" %}</td>
+                <td>{% trans "Saratov City Duma, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>{% trans "Apotheosis of History (with V.V. Zauraev)" %}</td>
+                <td>{% trans "Grozny, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2011</td>
+                <td>{% trans "Scream in Art" %}</td>
+                <td>{% trans "Maykop, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>{% trans "Zonal Exhibition" %}</td>
+                <td>{% trans "Rostov-on-Don, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>{% trans "VIII International Art Symposium 'Tales of Love'" %}</td>
+                <td>{% trans "Yelabuga, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>{% trans "Hand in Art" %}</td>
+                <td>{% trans "Maykop, Russia" %}</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>{% trans "XI Regional Exhibition 'Southern Russia'" %}</td>
+                <td>{% trans "Grozny, Russia" %}</td>
+            </tr>
+        </table>
+    </div>
 
-<hr class="custom-hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 100px 0;">
+    <hr class="custom-hr" style="border-top: 1px solid rgba(255, 255, 255, 0.5); margin: 100px 0;">
 
-<div class="iconbutton">
-    <a href="#bio">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
-</div>
+    <div class="iconbutton">
+        <a href="#bio">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </a>
+    </div>
 
-<!-- Enlarged Image Modal -->
-<div class="enlarged-modal" onclick="closeEnlarged()">
-    <span class="close-button" onclick="closeEnlarged()">&times;</span>
-    <img id="enlargedImg" alt="">
-</div>
+    <!-- Enlarged Image Modal -->
+    <div class="enlarged-modal" onclick="closeEnlarged()">
+        <span class="close-button" onclick="closeEnlarged()">&times;</span>
+        <img id="enlargedImg" alt="">
+    </div>
 </body>
 <script src="{% static 'js/bioScript.js' %}"></script>
 {% endblock %}
