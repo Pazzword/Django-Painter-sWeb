@@ -29,6 +29,7 @@
             <a class="nav-item nav-link lang-switcher-link" data-lang="en"><img src="{% static 'Images/en.png' %}" alt="EN" class="lang-icon"></a>
             <a class="nav-item nav-link lang-switcher-link" data-lang="ru"><img src="{% static 'Images/ru.png' %}" alt="RU" class="lang-icon"></a>
             <a class="nav-item nav-link lang-switcher-link" data-lang="fr"><img src="{% static 'Images/fr.png' %}" alt="FR" class="lang-icon"></a>
+            <a class="nav-item nav-link lang-switcher-link" data-lang="de"><img src="{% static 'Images/de.png' %}" alt="DE" class="lang-icon"></a>
         </div>
     </nav>
 
@@ -173,7 +174,7 @@
                     var lang = this.getAttribute("data-lang");
                     var path = window.location.pathname;
                     var segments = path.split("/").filter(Boolean);
-                    if (["en", "ru", "fr"].includes(segments[0])) {
+                    if (["en", "ru", "fr", "de"].includes(segments[0])) {
                         segments[0] = lang;
                     } else {
                         segments.unshift(lang);

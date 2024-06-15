@@ -100,6 +100,7 @@ LANGUAGES = [
     ('en', 'English'),
     ('ru', 'Russian'),
     ('fr', 'French'),
+    ('de', 'German'),
 ]
 
 # django-parler settings
@@ -108,6 +109,7 @@ PARLER_LANGUAGES = {
         {'code': 'en'},
         {'code': 'ru'},
         {'code': 'fr'},
+        {'code': 'de'},
     ),
     'default': {
         'fallback': 'en',

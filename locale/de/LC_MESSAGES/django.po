@@ -1,0 +1,521 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-15 14:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pashaev/templates/pashaev/bio.html:4
+msgid "Bio"
+msgstr "Biografie"
+
+#: pashaev/templates/pashaev/bio.html:15
+msgid "Where Art Meets Emotion, and Every Stroke Tells a Story."
+msgstr "Wo Kunst auf Emotionen trifft und jeder Strich eine Geschichte erzählt."
+
+#: pashaev/templates/pashaev/bio.html:16
+msgid ""
+"Abu Pashaev, born in 1966 in Chechen-Aul, is a distinguished artist whose "
+"life journey shapes \n"
+"            his profound creations. From serving in the Soviet Army to "
+"graduating in graphic design, Pashaev's diverse \n"
+"            experiences manifest in his artwork. Seeking guidance from "
+"renowned Chechen artists and integrating martial arts philosophy, \n"
+"            he crafted his style, 'Wind.' His graphic series, like 'You "
+"Don't Know How Painful It Is!,' explores inner worlds \n"
+"            with titles such as 'Scream' and 'Apocalypse.' Pashaev's works "
+"express universal themes of pain, solitude, and the human condition, \n"
+"            showcasing his ability to convey deep emotions through a "
+"meticulous artistic process. His inaugural exhibition, \n"
+"            'Atomic Heart of My Mom' (1992), marked the beginning of a "
+"significant artistic journey. Abu Pashaev emerges as an artist \n"
+"            whose profound expressions resonate with the complexities of "
+"human existence."
+msgstr ""
+"Abu Pashaev, geboren 1966 in Tschetschen-Aul, ist ein angesehener Künstler, dessen Lebensweg "
+"seine tiefgründigen Werke prägt. Vom Dienst in der Sowjetarmee bis zum Abschluss in Grafikdesign, "
+"Pashaevs vielfältige Erfahrungen manifestieren sich in seiner Kunst. Unter der Anleitung "
+"renommierter tschetschenischer Künstler und der Integration der Kampfkunstphilosophie entwickelte "
+"er seinen Stil 'Wind'. Seine Grafikserien, wie 'Du weißt nicht, wie schmerzhaft es ist!', erforschen "
+"innere Welten mit Titeln wie 'Schrei' und 'Apokalypse'. Pashaevs Werke drücken universelle Themen "
+"wie Schmerz, Einsamkeit und die menschliche Natur aus und zeigen seine Fähigkeit, tiefe Emotionen "
+"durch einen sorgfältigen künstlerischen Prozess zu vermitteln. Seine erste Ausstellung, 'Atomisches "
+"Herz meiner Mutter' (1992), markierte den Beginn einer bedeutenden künstlerischen Reise. Abu Pashaev "
+"tritt als Künstler hervor, dessen tiefgründige Ausdrucksweise mit den Komplexitäten der menschlichen "
+"Existenz resoniert."
+
+#: pashaev/templates/pashaev/bio.html:31
+msgid ""
+"The artist's series of works, titled 'Esoteric Perspective on Ancestral "
+"Symbols,' is a profound exploration inspired by their late mentor, Vsevolod "
+"Semenych Grygoriev. Rooted in the artist's journey of self-discovery during "
+"the early 90s, these pieces reflect their deep immersion in avant-garde "
+"movements, particularly surrealism, as they sought to articulate their "
+"unique vision through art."
+msgstr ""
+"Die Werkserie des Künstlers mit dem Titel 'Esoterische Perspektive auf Ahnensymbole' ist eine tiefgründige "
+"Erforschung, inspiriert von ihrem verstorbenen Mentor Vsevolod Semenych Grygoriev. Verwurzelt in der "
+"Selbstfindungsreise des Künstlers in den frühen 90er Jahren, spiegeln diese Stücke ihr tiefes Eintauchen in "
+"avantgardistische Bewegungen wider, insbesondere den Surrealismus, während sie versuchten, ihre einzigartige "
+"Vision durch Kunst auszudrücken."
+
+#: pashaev/templates/pashaev/bio.html:34
+msgid ""
+"Drawing from their academic background in graphic design at the Chechen "
+"State Pedagogical Institute, the artist received pivotal guidance from "
+"Grygoriev, a seasoned artist with a rich theatrical background. Under "
+"Grygoriev's mentorship, the artist gained insights into the transformative "
+"impact of artists like Salvador Dalí, who infused surrealism with their "
+"distinct worldview, shaping the artistic landscape of both the West and "
+"Europe."
+msgstr ""
+"Aufbauend auf ihrem akademischen Hintergrund in Grafikdesign am Tschetschenischen Staatlichen Pädagogischen Institut erhielt der Künstler entscheidende Anleitung von Grygoriev, einem erfahrenen Künstler mit reichem theatralischem Hintergrund. Unter Grygorievs Mentorschaft erhielt der Künstler Einblicke in die transformative Wirkung von Künstlern wie Salvador Dalí, die den Surrealismus mit ihrer einzigartigen Weltanschauung durchdrangen und die künstlerische Landschaft sowohl des Westens als auch Europas prägten."
+
+#: pashaev/templates/pashaev/bio.html:37
+msgid ""
+"Encouraged by Grygoriev to incorporate elements of national ethnicity into "
+"their work, the artist embarked on a creative journey marked by profound "
+"symbolism and cultural significance. Each piece in the series reflects a "
+"meticulous fusion of artistic expression and ancestral heritage, aimed at "
+"capturing the essence of the human experience."
+msgstr ""
+"Von Grygoriev ermutigt, Elemente der nationalen Ethnizität in ihre Arbeit einzubeziehen, begab sich der Künstler auf eine kreative Reise, die von tiefgründigem Symbolismus und kultureller Bedeutung geprägt war. Jedes Stück in der Serie spiegelt eine sorgfältige Verschmelzung von künstlerischem Ausdruck und dem Erbe der Vorfahren wider, mit dem Ziel, das Wesen der menschlichen Erfahrung einzufangen."
+
+#: pashaev/templates/pashaev/bio.html:51
+msgid ""
+"Pashaev's works express universal themes of pain, solitude, and the human "
+"condition, showcasing his ability to convey deep emotions through a "
+"meticulous artistic process."
+msgstr ""
+"Pashaevs Werke drücken universelle Themen wie Schmerz, Einsamkeit und die menschliche Natur aus und zeigen seine Fähigkeit, tiefe Emotionen durch einen sorgfältigen künstlerischen Prozess zu vermitteln."
+
+#: pashaev/templates/pashaev/bio.html:52
+msgid ""
+"His inaugural exhibition, 'Atomic Heart of My Mom' (1992), marked the "
+"beginning of a significant artistic journey. Abu Pashaev emerges as an "
+"artist whose profound expressions resonate with the complexities of human "
+"existence."
+msgstr ""
+"Seine erste Ausstellung, 'Atomisches Herz meiner Mutter' (1992), markierte den Beginn einer bedeutenden künstlerischen Reise. Abu Pashaev tritt als Künstler hervor, dessen tiefgründige Ausdrucksweise mit den Komplexitäten der menschlichen Existenz resoniert."
+
+#: pashaev/templates/pashaev/bio.html:86
+msgid ""
+"In this artwork, one encounters a depiction from the series 'An Esoteric "
+"Perspective on \n"
+"                    Ancestral Symbols', specifically the right part of the "
+"triptych. It portrays a figure resembling a thinker, \n"
+"                    with the wing of a bird and a lowered hand, as if "
+"supporting a fragment of a mountain where a tower stands, \n"
+"                    alongside a flying winged sun disk. The scene invites "
+"contemplation through time and space of the origins \n"
+"                    of the depicted character's ancestors, the Sumerians and "
+"the Hurrians, representing a civilization that has \n"
+"                    faded into history. As an artist chronicler, the piece "
+"reflects a dreamlike vision, with signs resembling \n"
+"                    imprints suspended in the air, carrying cryptic "
+"information that eludes understanding, leaving viewers only \n"
+"                    able to speculate. This artwork serves as a metaphorical "
+"journey of self-discovery..."
+msgstr ""
+"In diesem Kunstwerk begegnet man einer Darstellung aus der Serie 'Eine esoterische Perspektive auf Ahnensymbole', speziell dem rechten Teil des Triptychons. Es zeigt eine Figur, die einem Denker ähnelt, mit dem Flügel eines Vogels und einer gesenkten Hand, als würde sie ein Fragment eines Berges stützen, auf dem ein Turm steht, neben einer fliegenden geflügelten Sonnenscheibe. Die Szene lädt zur Kontemplation über Zeit und Raum hinweg über die Ursprünge der dargestellten Vorfahren der Sumerer und Hurrier ein, die eine Zivilisation darstellen, die in die Geschichte eingegangen ist. Als künstlerischer Chronist reflektiert das Stück eine traumähnliche Vision, mit Zeichen, die wie im Raum schwebende Abdrücke wirken, die kryptische Informationen tragen, die dem Verständnis entgehen und die Betrachter nur spekulieren lassen. Dieses Kunstwerk dient als metaphorische Reise zur Selbstfindung..."
+
+#: pashaev/templates/pashaev/bio.html:111
+msgid "Art Exhibitions"
+msgstr "Kunstausstellungen"
+
+#: pashaev/templates/pashaev/bio.html:119
+msgid "Atomic Heart of My Mom"
+msgstr "Atomisches Herz meiner Mutter"
+
+#: pashaev/templates/pashaev/bio.html:120
+#: pashaev/templates/pashaev/bio.html:125
+#: pashaev/templates/pashaev/bio.html:150
+#: pashaev/templates/pashaev/bio.html:155
+#: pashaev/templates/pashaev/bio.html:175
+#: pashaev/templates/pashaev/bio.html:200
+msgid "Grozny, Russia"
+msgstr "Grosny, Russland"
+
+#: pashaev/templates/pashaev/bio.html:124
+msgid "Premonition of the Civil War"
+msgstr "Vorahnung des Bürgerkriegs"
+
+#: pashaev/templates/pashaev/bio.html:129
+msgid "Silent Protest Against Violence"
+msgstr "Stiller Protest gegen Gewalt"
+
+#: pashaev/templates/pashaev/bio.html:130
+#: pashaev/templates/pashaev/bio.html:135
+msgid "Chechen-Aul, Russia"
+msgstr "Tschetschen-Aul, Russland"
+
+#: pashaev/templates/pashaev/bio.html:134
+msgid "Wounded Flowers"
+msgstr "Verwundete Blumen"
+
+#: pashaev/templates/pashaev/bio.html:139
+#: pashaev/templates/pashaev/bio.html:144
+msgid "The Face of War"
+msgstr "Das Gesicht des Krieges"
+
+#: pashaev/templates/pashaev/bio.html:140
+msgid "Nazran, Russia"
+msgstr "Nazran, Russland"
+
+#: pashaev/templates/pashaev/bio.html:145
+msgid "Prague, Czech Republic"
+msgstr "Prag, Tschechische Republik"
+
+#: pashaev/templates/pashaev/bio.html:149
+msgid "Optimistic Reflection of the Past"
+msgstr "Optimistische Reflexion der Vergangenheit"
+
+#: pashaev/templates/pashaev/bio.html:154
+msgid "Peace to the Caucasus"
+msgstr "Frieden für den Kaukasus"
+
+#: pashaev/templates/pashaev/bio.html:159
+msgid "Sochi - 2008"
+msgstr "Sotschi - 2008"
+
+#: pashaev/templates/pashaev/bio.html:160
+msgid "Sochi, Russia"
+msgstr "Sotschi, Russland"
+
+#: pashaev/templates/pashaev/bio.html:164
+msgid "Chechen Artists at the State Duma"
+msgstr "Tschetschenische Künstler in der Staatsduma"
+
+#: pashaev/templates/pashaev/bio.html:165
+msgid "Moscow, Russia"
+msgstr "Moskau, Russland"
+
+#: pashaev/templates/pashaev/bio.html:169
+msgid "Artists from the Chechen Republic"
+msgstr "Künstler aus der Tschetschenischen Republik"
+
+#: pashaev/templates/pashaev/bio.html:170
+msgid "Saratov City Duma, Russia"
+msgstr "Stadtduma Saratow, Russland"
+
+#: pashaev/templates/pashaev/bio.html:174
+msgid "Apotheosis of History (with V.V. Zauraev)"
+msgstr "Apotheose der Geschichte (mit V.V. Zauraev)"
+
+#: pashaev/templates/pashaev/bio.html:179
+msgid "Scream in Art"
+msgstr "Schrei in der Kunst"
+
+#: pashaev/templates/pashaev/bio.html:180
+#: pashaev/templates/pashaev/bio.html:195
+msgid "Maykop, Russia"
+msgstr "Maikop, Russland"
+
+#: pashaev/templates/pashaev/bio.html:184
+msgid "Zonal Exhibition"
+msgstr "Zonenausstellung"
+
+#: pashaev/templates/pashaev/bio.html:185
+msgid "Rostov-on-Don, Russia"
+msgstr "Rostow am Don, Russland"
+
+#: pashaev/templates/pashaev/bio.html:189
+msgid "VIII International Art Symposium 'Tales of Love'"
+msgstr "VIII. Internationales Kunstsymposium 'Erzählungen der Liebe'"
+
+#: pashaev/templates/pashaev/bio.html:190
+msgid "Yelabuga, Russia"
+msgstr "Jelabuga, Russland"
+
+#: pashaev/templates/pashaev/bio.html:194
+msgid "Hand in Art"
+msgstr "Hand in der Kunst"
+
+#: pashaev/templates/pashaev/bio.html:199
+msgid "XI Regional Exhibition 'Southern Russia'"
+msgstr "XI. Regionale Ausstellung 'Südrussland'"
+
+#: pashaev/templates/pashaev/body.html:16
+msgid "Website Title"
+msgstr "Webseitentitel"
+
+#: pashaev/templates/pashaev/body.html:23
+msgid "MAIN"
+msgstr "HAUPTSEITE"
+
+#: pashaev/templates/pashaev/body.html:24
+msgid "BIOGRAPHY"
+msgstr "BIOGRAFIE"
+
+#: pashaev/templates/pashaev/body.html:25
+msgid "GALLERY"
+msgstr "GALERIE"
+
+#: pashaev/templates/pashaev/body.html:56
+#: pashaev/templates/pashaev/body.html:59
+#: pashaev/templates/pashaev/body.html:62
+#: pashaev/templates/pashaev/body.html:65
+msgid "Value creation"
+msgstr "Wertschöpfung"
+
+#: pashaev/templates/pashaev/body.html:71
+msgid "Sections"
+msgstr "Abschnitte"
+
+#: pashaev/templates/pashaev/body.html:75
+msgid "Home"
+msgstr "Startseite"
+
+#: pashaev/templates/pashaev/body.html:76
+msgid "Biography"
+msgstr "Biografie"
+
+#: pashaev/templates/pashaev/body.html:77
+#: pashaev/templates/pashaev/gallery.html:4
+msgid "Gallery"
+msgstr "Galerie"
+
+#: pashaev/templates/pashaev/body.html:84
+msgid "Social"
+msgstr "Soziale Medien"
+
+#: pashaev/templates/pashaev/body.html:92
+msgid "Follow us on Facebook"
+msgstr "Folgen Sie uns auf Facebook"
+
+#: pashaev/templates/pashaev/body.html:101
+msgid "Follow us on Instagram"
+msgstr "Folgen Sie uns auf Instagram"
+
+#: pashaev/templates/pashaev/body.html:110
+msgid "Email us"
+msgstr "Schreiben Sie uns eine E-Mail"
+
+#: pashaev/templates/pashaev/body.html:116
+msgid "Contact"
+msgstr "Kontakt"
+
+#: pashaev/templates/pashaev/body.html:120
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: pashaev/templates/pashaev/body.html:124
+msgid "Photography"
+msgstr "Fotografie"
+
+#: pashaev/templates/pashaev/body.html:127
+msgid "More Photography"
+msgstr "Weitere Fotografie"
+
+#: pashaev/templates/pashaev/body.html:144
+msgid "All works © Abu Pashaev"
+msgstr "Alle Werke © Abu Pashaev"
+
+#: pashaev/templates/pashaev/body.html:146
+msgid "Email"
+msgstr "E-Mail"
+
+#: pashaev/templates/pashaev/body.html:149
+msgid "Donate"
+msgstr "Spenden"
+
+#: pashaev/templates/pashaev/body.html:150
+msgid "Buy me a Coffee"
+msgstr "Kaufen Sie mir einen Kaffee"
+
+#: pashaev/templates/pashaev/gallery.html:35
+msgid "Reflected Past Through Time and Space"
+msgstr "Reflektierte Vergangenheit durch Zeit und Raum"
+
+#: pashaev/templates/pashaev/gallery.html:60
+msgid "Contemplation Through Time and Space"
+msgstr "Kontemplation durch Zeit und Raum"
+
+#: pashaev/templates/pashaev/gallery.html:84
+msgid "Date by the Erzi Towers"
+msgstr "Verabredung bei den Erzi-Türmen"
+
+#: pashaev/templates/pashaev/gallery.html:108
+msgid "The Past Reflected in the Present"
+msgstr "Die Vergangenheit im Jetzt reflektiert"
+
+#: pashaev/templates/pashaev/gallery.html:132
+#: pashaev/templates/pashaev/gallery.html:313
+msgid "Interrupted Flight"
+msgstr "Unterbrochener Flug"
+
+#: pashaev/templates/pashaev/gallery.html:156
+#: pashaev/templates/pashaev/gallery.html:307
+msgid "Spring"
+msgstr "Frühling"
+
+#: pashaev/templates/pashaev/gallery.html:180
+msgid "The Tree"
+msgstr "Der Baum"
+
+#: pashaev/templates/pashaev/gallery.html:223
+msgid "Contemplation through Time and Space"
+msgstr "Kontemplation durch Zeit und Raum"
+
+#: pashaev/templates/pashaev/gallery.html:229
+msgid "Goryanka"
+msgstr "Goryanka"
+
+#: pashaev/templates/pashaev/gallery.html:235
+msgid "Variant: Dream in the Jade Pavilion"
+msgstr "Variante: Traum im Jade-Pavillon"
+
+#: pashaev/templates/pashaev/gallery.html:241
+msgid "Inside Metamorphosis"
+msgstr "In der Metamorphose"
+
+#: pashaev/templates/pashaev/gallery.html:247
+msgid "Dream in the Jade Pavilion"
+msgstr "Traum im Jade-Pavillon"
+
+#: pashaev/templates/pashaev/gallery.html:253
+msgid ""
+"Illustration for the poem: 'Autumn, the Wind's Breath, Fallen Leaves, Yet "
+"Spring Blossoms in My Heart…'"
+msgstr ""
+"Illustration für das Gedicht: 'Herbst, der Atem des Windes, gefallene Blätter, dennoch blüht der Frühling in meinem Herzen…'"
+
+#: pashaev/templates/pashaev/gallery.html:259
+msgid "Genealogical tree"
+msgstr "Stammbaum"
+
+#: pashaev/templates/pashaev/gallery.html:265
+msgid "Reflected Past Across Time and Space"
+msgstr "Reflektierte Vergangenheit durch Zeit und Raum"
+
+#: pashaev/templates/pashaev/gallery.html:271
+msgid "Mirage"
+msgstr "Fata Morgana"
+
+#: pashaev/templates/pashaev/gallery.html:277
+msgid "Transformation of Narcissus and Echo"
+msgstr "Transformation von Narziss und Echo"
+
+#: pashaev/templates/pashaev/gallery.html:283
+msgid "Time Is Relentless"
+msgstr "Die Zeit ist unaufhaltsam"
+
+#: pashaev/templates/pashaev/gallery.html:289
+msgid "Petroglyphs"
+msgstr "Petroglyphen"
+
+#: pashaev/templates/pashaev/gallery.html:295
+msgid "Nostalgia Transcending the Phrase of Infinity"
+msgstr "Nostalgie, die den Begriff der Unendlichkeit überschreitet"
+
+#: pashaev/templates/pashaev/gallery.html:301
+msgid "Tree"
+msgstr "Baum"
+
+#: pashaev/templates/pashaev/gallery.html:319
+msgid "Past Reflected in the Present"
+msgstr "Vergangenheit im Jetzt reflektiert"
+
+#: pashaev/templates/pashaev/gallery.html:325
+msgid "Rendezvous by the Towers of Erzi"
+msgstr "Rendezvous bei den Türmen von Erzi"
+
+#: pashaev/templates/pashaev/gallery.html:331
+msgid "Contemplation Through Time and Space 2"
+msgstr "Kontemplation durch Zeit und Raum 2"
+
+#: pashaev/templates/pashaev/gallery.html:337
+msgid "Nostalgia Transitioning into the Phase of Infinity"
+msgstr "Nostalgie, die in die Phase der Unendlichkeit übergeht"
+
+#: pashaev/templates/pashaev/gallery.html:343
+msgid "The Warrior in a Burqa Contemplating Petroglyphs"
+msgstr "Der Krieger in einer Burka, der Petroglyphen betrachtet"
+
+#: pashaev/templates/pashaev/gallery.html:349
+msgid "Tower"
+msgstr "Turm"
+
+#: pashaev/templates/pashaev/gallery.html:355
+msgid "Seppuku"
+msgstr "Seppuku"
+
+#: pashaev/templates/pashaev/gallery.html:361
+msgid "You and Me"
+msgstr "Du und Ich"
+
+#: pashaev/templates/pashaev/gallery.html:367
+msgid "Genealogical Tree"
+msgstr "Stammbaum"
+
+#: pashaev/templates/pashaev/gallery.html:373
+msgid "Dream as if There Were No Tomorrow"
+msgstr "Träume, als gäbe es kein Morgen"
+
+#: pashaev/templates/pashaev/gallery.html:379
+msgid "Istang art. fluid execution"
+msgstr "Istang-Kunst. Flüssige Ausführung"
+
+#: pashaev/templates/pashaev/gallery.html:385
+msgid "Late for Spring"
+msgstr "Zu spät für den Frühling"
+
+#: pashaev/templates/pashaev/gallery.html:391
+msgid "Hunt"
+msgstr "Jagd"
+
+#: pashaev/templates/pashaev/pashaev_home.html:4
+msgid "HOME"
+msgstr "STARTSEITE"
+
+#: pashaev/templates/pashaev/pashaev_home.html:16
+msgid "Nostalgia is a passing phrase of infinity."
+msgstr "Nostalgie ist eine vorübergehende Phase der Unendlichkeit."
+
+#: pashaev/templates/pashaev/pashaev_home.html:29
+msgid ""
+"Abu Pashaev is a distinguished artist whose life journey shapes his profound "
+"creations. From serving in the Soviet Army to graduating in graphic design, "
+"Pashaev's diverse experiences manifest in his artwork. Seeking guidance from "
+"renowned Chechen artists and integrating martial arts philosophy, he crafted "
+"his style, 'Wind.' His graphic series, like 'You Don't Know How Painful It "
+"Is!,' explores inner worlds with titles such as 'Scream' and 'Apocalypse.'"
+msgstr ""
+"Abu Pashaev ist ein angesehener Künstler, dessen Lebensweg seine tiefgründigen Werke prägt. Vom Dienst in der Sowjetarmee bis zum Abschluss in Grafikdesign, spiegeln sich Pashaevs vielfältige Erfahrungen in seiner Kunst wider. Unter der Anleitung renommierter tschetschenischer Künstler und der Integration der Kampfkunstphilosophie entwickelte er seinen Stil 'Wind'. Seine Grafikserien, wie 'Du weißt nicht, wie schmerzhaft es ist!', erforschen innere Welten mit Titeln wie 'Schrei' und 'Apokalypse'."
+
+#: pashaev/templates/pashaev/pashaev_home.html:41
+msgid "An Esoteric Perspective on Ancestral Symbols"
+msgstr "Eine esoterische Perspektive auf Ahnensymbole"
+
+#: pashaev/templates/pashaev/pashaev_home.html:46
+msgid "Image 1"
+msgstr "Bild 1"
+
+#: pashaev/templates/pashaev/pashaev_home.html:49
+msgid "Image 2"
+msgstr "Bild 2"
+
+#: pashaev/templates/pashaev/pashaev_home.html:52
+msgid "Image 3"
+msgstr "Bild 3"
+
+#: pashaev/templates/pashaev/pashaev_home.html:55
+msgid "Image 4"
+msgstr "Bild 4"
+
+#: pashaev/templates/pashaev/pashaev_home.html:58
+msgid "Image 5"
+msgstr "Bild 5"
