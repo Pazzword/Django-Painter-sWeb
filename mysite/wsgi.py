@@ -14,4 +14,4 @@ activate_this = '/home/pashaev/.virtualenvs/pashaev.pythonanywhere.com/bin/activ
 exec(open(activate_this).read(), dict(__file__=activate_this))
 
 from django.core.wsgi import get_wsgi_application
-application = get_wsgi_application()
+application = get_wsgi_application()'''
