@@ -1,10 +1,11 @@
 body {
+    font-family: 'Playfair Display', serif;
     background-image: url('/static/Images/brown.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
 }
+
 
 .text-font, .top-bio, .white-container, .textFont {
     font-family: "Comfortaa";
@@ -212,6 +213,8 @@ tr:nth-child(even) {
 .text-center {
     text-align: center;
     color: #ffffff;
+    font-family: "Comfortaa";
+    src: url('fonts/Comfortaa.ttf') format('truetype');
 }
 
 .custom-heading {

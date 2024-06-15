@@ -19,7 +19,7 @@ body {
     display: flex;
     background-color: #4f262f;
     padding: 15px 0;
-    border-bottom: 1px solid #d2d2d2;
+    border-bottom: 1px solid #000000;
     margin: 0;
     width: 100%;
     position: relative;
@@ -32,6 +32,7 @@ body {
     justify-content: center; /* Center the navbar options horizontally */
     align-items: center; /* Center vertically within navbar */
     height: 100%; /* Ensure the navbar height is full */
+    margin: 0 auto; /* Center align the navbar links container */
 }
 
 .navbar-nav a {
@@ -231,6 +232,11 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
+}
+
+.lang-switcher .dropdown-menu {
+    right: 0;
+    left: auto;
 }
 
 .lang-switcher a {
