@@ -57,6 +57,24 @@ body {
     background-color: #000000;
 }
 
+/* Smooth transition for the navbar collapse */
+.navbar-collapse {
+    transition: height 0.3s ease;
+}
+
+.navbar-nav .dropdown-menu {
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+}
 .footer-section {
     background-color: #0a0a23;
     padding: 20px 0;

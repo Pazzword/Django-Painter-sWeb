@@ -237,6 +237,8 @@ html {
   display: none;
 }
 
+
+
 .tranding-slider-control {
   position: relative;
   bottom: 2rem;
@@ -429,4 +431,68 @@ html {
   height: 50vmin;
   object-fit: cover;
   object-position: 100% center;
+}
+
+/* Add this new class to rotate the last six images by 90 degrees */
+.rotate-image .image {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.rotate-image .rotate-frame-180 .image {
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+/* CSS for the grid layout */
+.grid-container.fluid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 15px; /* Gap between pictures */
+  padding: 15px;
+  background-color: #000; /* Black background for the container */
+  border-radius: 10px; /* Optional: rounded corners for the container */
+}
+
+.grid-container.fluid .grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4f262f; /* Black background for each grid item */
+  padding: 10px; /* Padding inside each grid item */
+  border-radius: 10px; /* Rounded corners for each grid item */
+}
+
+.grid-container.fluid .grid-item .frame {
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  background-color: transparent; /* Transparent background */
+}
+
+.grid-container.fluid .grid-item .image {
+  width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 250px; /* Make other images larger */
+  cursor: pointer;
+  margin-bottom: 10px; /* Gap between image and description */
+}
+
+.grid-container.fluid .grid-item.rotate-image .image {
+  max-width: 150px; /* Make the last six images smaller */
+}
+
+.grid-container.fluid .grid-item .image-name {
+  color: white; /* White text for description */
+  text-align: center; /* Centered text */
+}
+
+/* Rotation classes */
+.rotate-image .image {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.rotate-frame-180 .image {
+  transform: rotate(180deg);
+  transform-origin: center;
 }
