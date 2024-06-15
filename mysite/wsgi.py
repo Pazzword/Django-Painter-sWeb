@@ -1,14 +1,14 @@
 
-import os
+'''import os
 
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
 
-application = get_wsgi_application()
+application = get_wsgi_application()'''
 
 
-'''import os
+import os
 import sys
 
 # Add your project directory to the sys.path
@@ -24,4 +24,4 @@ activate_this = '/home/pashaev/.virtualenvs/pashaev.pythonanywhere.com/bin/activ
 exec(open(activate_this).read(), dict(__file__=activate_this))
 
 from django.core.wsgi import get_wsgi_application
-application = get_wsgi_application()'''
+application = get_wsgi_application()
