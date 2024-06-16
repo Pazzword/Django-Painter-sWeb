@@ -110,18 +110,42 @@ div.item:nth-of-type(5) {
     --offset: 5;
 }
 
+/* Base font styles */
 .text-font {
     font-family: "Kalam-Regular";
     src: url('fonts/Kalam-Regular.ttf') format('truetype');
     font-weight: bold;
+    
 }
 
 .top-bio {
-    font-size: 14px;
-    padding: 20px;
-    text-align: center;
     font-family: "Comfortaa";
     src: url('fonts/Comfortaa.ttf') format('truetype');
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Adjust font size for desktop */
+@media (min-width: 992px) {
+    .top-bio {
+        font-size: 18px;
+    }
+}
+
+/* Adjust font size for tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-bio {
+        font-size: 16px;
+    }
+}
+
+/* Adjust font size for mobile */
+@media (max-width: 767px) {
+    .top-bio {
+        font-size: 14px;
+        text-align: left;
+    }
 }
 
 .text-center {

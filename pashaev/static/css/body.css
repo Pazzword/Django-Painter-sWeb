@@ -6,13 +6,16 @@
 }
 
 body {
+    background-image: url('/static/Images/brown.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .navbar {
@@ -29,20 +32,15 @@ body {
 .navbar-nav {
     font-family: 'Comfortaa', sans-serif;
     display: flex;
-    justify-content: center; /* Center the navbar options horizontally */
-    align-items: center; /* Center vertically within navbar */
-    height: 100%; /* Ensure the navbar height is full */
-    margin: 0 auto; /* Center align the navbar links container */
-}
-
-.navbar-nav a {
-    font-family: 'Comfortaa', sans-serif;
-    /* Add any other styling you need for the navigation links */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .nav-item {
-    font-size: 15px; 
-    margin: 0 40px; /* Add more horizontal spacing between options */
+    font-size: 15px;
+    margin: 0 40px;
 }
 
 .nav-link {
@@ -58,13 +56,8 @@ body {
     background-color: #000000;
 }
 
-/* Smooth transition for the navbar collapse */
 .navbar-collapse {
     transition: height 0.3s ease;
-}
-
-.navbar-nav .dropdown-menu {
-    transition: all 0.3s ease;
 }
 
 .dropdown-menu.show {
@@ -75,7 +68,9 @@ body {
 .dropdown-menu {
     opacity: 0;
     transform: translateY(-10px);
+    transition: all 0.3s ease;
 }
+
 .footer-section {
     background-color: #0a0a23;
     padding: 20px 0;
@@ -158,7 +153,7 @@ body {
 }
 
 .page__footer-border {
-    border-top: 1px solid rgba(255, 255, 255, 0.5); /* Ensuring consistent border style */
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     margin: 50px 0;
 }
 
@@ -187,10 +182,6 @@ body {
     text-align: center;
 }
 
-/* Remove red border used for visualization */
-* {
-    border: none;
-}
 .row-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -207,8 +198,8 @@ body {
 }
 
 .page__footer-border .row > div {
-    flex: 1; /* Ensures each column takes equal space */
-    margin: 0 10px; /* Adds margin between the columns */
+    flex: 1;
+    margin: 0 10px;
 }
 
 .gif-container {
@@ -249,4 +240,35 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+
+.iconbutton {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.iconbutton:hover {
+    background-color: #ec994b;
+}
+
+.row-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-bottom: 3%;
+}
+
+/* Remove red border used for visualization */
+* {
+    border: none;
 }

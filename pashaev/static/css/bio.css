@@ -1,15 +1,13 @@
-body {
-    font-family: 'Playfair Display', serif;
+body.bio-page {
+    font-family: "Comfortaa";
     background-image: url('/static/Images/brown.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-
 .text-font, .top-bio, .white-container, .textFont {
     font-family: "Comfortaa";
-    src: url('fonts/Comfortaa.ttf') format('truetype');
 }
 
 .top-bio {
@@ -26,6 +24,19 @@ body {
 .white-container {
     padding: 20px;
     font-weight: bold;
+    overflow-wrap: break-word;
+}
+
+/* Prevent text overflow */
+.white-container p, .top-bio, .sign {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Improved responsiveness for text */
+.white-container p, .top-bio, .sign {
+    max-width: 100%;
+
 }
 
 h1 {
@@ -42,12 +53,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.frame-container img {
-    border-radius: 8px;
+/* Centering images */
+.frame-container img, .frame-container2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sign {
     margin-top: 20px;
+    text-align: justify;
 }
 
 /* Image Slider Styles */
@@ -129,8 +144,9 @@ h1 {
 }
 
 /* Table Container Styles */
+/* Table Container Styles */
 .table-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow-x: auto;
 }
@@ -147,7 +163,8 @@ th, td {
     text-align: center;
 }
 
-tr:nth-child(even) {
+/* Apply background color to every second row */
+table tr:nth-child(even) {
     background-color: #4f262f;
 }
 
@@ -156,6 +173,7 @@ tr:nth-child(even) {
         font-size: 14px;
     }
 }
+
 
 /* Cream Container Styles */
 .cream-container {
@@ -208,13 +226,10 @@ tr:nth-child(even) {
     margin-left: 200px;
 }
 
-
-
 .text-center {
     text-align: center;
     color: #ffffff;
     font-family: "Comfortaa";
-    src: url('fonts/Comfortaa.ttf') format('truetype');
 }
 
 .custom-heading {
@@ -222,7 +237,6 @@ tr:nth-child(even) {
     color: #ec994b;
 }
 
-/* Icon Button Styles */
 .iconbutton {
     width: 48px;
     height: 48px;
@@ -248,8 +262,6 @@ tr:nth-child(even) {
     margin-right: 14%;
     margin-bottom: 3%;
 }
-
-
 
 /* Remove red border used for visualization */
 * {
