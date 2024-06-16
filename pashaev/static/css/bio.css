@@ -168,12 +168,6 @@ table tr:nth-child(even) {
     background-color: #4f262f;
 }
 
-@media (max-width: 768px) {
-    table {
-        font-size: 14px;
-    }
-}
-
 
 /* Cream Container Styles */
 .cream-container {
@@ -262,6 +256,37 @@ table tr:nth-child(even) {
     margin-right: 14%;
     margin-bottom: 3%;
 }
+
+
+
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    
+    .white-container {
+        font-size: 16px;
+        padding: 20px;
+        font-weight: bold;
+        overflow-wrap: break-word;
+    }
+    
+
+    
+    /* Improved responsiveness for text */
+    .white-container p, .top-bio, .sign {
+        font-size: 12px;
+        padding: 20px;
+        
+        overflow-wrap: break-word
+    
+    }
+    .white-container h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
 
 /* Remove red border used for visualization */
 * {

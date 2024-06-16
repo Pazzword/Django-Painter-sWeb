@@ -119,11 +119,11 @@ msgstr ""
 
 #: pashaev/templates/pashaev/bio.html:51
 msgid ""
-"Pashaev's works express universal themes of pain, solitude, and the human "
+"Express universal themes of pain, solitude, and the human "
 "condition, showcasing his ability to convey deep emotions through a "
 "meticulous artistic process."
 msgstr ""
-"Работы Пашаева выражают универсальные темы боли, одиночества и человеческой "
+"Выражают универсальные темы боли, одиночества и человеческой "
 "природы, демонстрируя его способность передавать глубокие эмоции через "
 "тщательный художественный процесс."
 
