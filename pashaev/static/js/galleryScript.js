@@ -73,6 +73,8 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     }
   });
 
+//Gallery topslider
+
   //Top Slider 5 Frames//
   function preloadImages() {
     const images = [
