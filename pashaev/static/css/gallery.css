@@ -3,221 +3,73 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Comfortaa', sans-serif; /* Ensure consistency */
+  font-family: 'Comfortaa', sans-serif;
 }
 
-.carousel-container {
-  width: 60%;
-  margin: 0 auto;
-  perspective: 2000px;
+.image-wrapper {
+  background-color: #4f262f;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.carousel {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spin 15s infinite linear;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
+.white-frame-container {
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  transform-style: preserve-3d;
-  transform-origin: center center;
-  transition: transform 1s;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-.slide img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
-
-/* CSS for the grid layout */
-.grid-container {
-  margin-left: 0%;
-  margin-right: 0%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  grid-gap: 10px;
-  padding: 10px;
-}
-
-.grid-item {
-  position: relative;
-}
-
-.image {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.frame {
-  border: 4px solid #0a0a23;
-  padding: 5px;
-  background-color: #0a0a23;
-  display: inline-block;
-  transition: transform 0.3s ease-in-out;
-}
-
-.horizontal-gallery {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 10px;
-}
-
-.horizontal-gallery .grid-item {
-  flex: 0 0 auto;
-}
-
-.frame:hover {
-  transform: scale(1.05);
-}
-
-.gallery-button-container {
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.gallery-span {
-  color: #bbb8b8;
-  font-size: 40px;
-  cursor: pointer;
+.white-frame {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+  background-color: #4f262f;
   padding: 20px;
+  border-radius: 20px;
 }
 
-.image-name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 5px;
-  text-align: center;
-  font-size: 14px;
-}
-
-/* CSS for the slider */
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background: #797979;
-  transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #222224;
-}
-
-::-webkit-scrollbar-track {
-  background: #f9f9f9;
+.container-fluid {
+  padding: 0;
 }
 
 .text-center {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
 }
 
-.section-heading {
-  font-size: 3rem;
-  color: var(--primary);
-  padding: 2rem 0;
+.team_hr {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 50px 0;
 }
 
 .background-section {
-  background-color: #4f262f; /* Change this to your desired background color */
-  margin-bottom: 20px; /* Optional: Add margin if needed */
+  background-color: #4f262f;
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 20px;
 }
 
 #tranding {
-  padding: 5px;
+  background-color: #4f262f;
+  padding: 4rem 0;
   border-radius: 20px;
 }
 
 #tranding .tranding-slider {
-  height: auto; /* Make height auto for responsiveness */
+  height: 52rem;
   padding: 2rem 0;
   position: relative;
 }
 
 .tranding-slide {
-  width: 100%;
-  max-width: 37rem;
-  height: auto;
+  width: 30rem;
+  height: 35rem;
   position: relative;
-  margin: 0 auto;
 }
 
 .tranding-slide .tranding-slide-img img {
-  width: 100%; /* Ensure images take the full width of the slide */
-  height: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 2rem;
-  object-fit: cover; /* Ensure the image covers the entire container */
+  object-fit: cover;
 }
 
 .tranding-slide .tranding-slide-content {
@@ -228,6 +80,7 @@ html {
 }
 
 .tranding-slide-content .description {
+  font-family: "Comfortaa";
   font-weight: bold;
 }
 
@@ -282,7 +135,7 @@ html {
 .tranding-slider-control .swiper-pagination {
   position: relative;
   width: 15rem;
-  bottom: 1rem;
+  bottom: 3rem;
 }
 
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
@@ -295,101 +148,79 @@ html {
 
 .larger-name {
   font-size: 48px;
-  color: #ffffff;
-  text-shadow:
-    -1px -1px 0 #000,
+  color: rgb(255, 255, 255);
+}
+.shadow {
+  text-shadow: 
+    -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
 
-.cream-container,
-.cream-container2 {
-  padding: 20px;
+
+.image-gallery {
+  width: 90%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.cream-container {
-  background-color: #fff8e1;
+.gallery-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
 }
 
-.cream-container img,
-.cream-container2 img {
-  border-radius: 20px;
-  width: 50%;
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.gallery-item .frame {
+  border: 4px solid #0a0a23;
+  padding: 5px;
+  background-color: #0a0a23;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item .image {
+  width: 100%;
   height: auto;
-  margin-right: auto;
-}
-
-.cream-container2 {
-  background-color: #0a0a23;
-}
-
-.left-section,
-.right-section2 {
-  display: flex;
-  align-items: center;
-}
-
-.right-section,
-.left-section2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text {
-  font-weight: bold;
-  font-size: 36px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #000000;
-}
-
-.text2 {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 36px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.explore-button,
-.gallery-button {
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
-.explore-button {
-  background-color: #0a0a23;
-  color: rgb(255, 255, 255);
-  margin-left: 200px;
+.gallery-item .image-name {
+  text-align: center;
+  color: #fff;
+  margin-top: 5px;
 }
 
-.explore-button:hover,
-.gallery-button:hover {
-  background-color: #a3a3a3;
+.image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.gallery-button {
-  background-color: white;
-  color: black;
-  margin-left: 200px;
+.image:hover {
+  transform: scale(1.05);
+}
+
+.image-name {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .horizontal-line {
@@ -417,189 +248,128 @@ html {
   background-color: #ec994b;
 }
 
-.body2 {
-  display: flex;
-  height: 60vh;
-  width: 74vw;
-  overflow: hidden;
-  flex-wrap: wrap;
-}
-
-#image-track {
-  margin-top: 4%;
-  display: flex;
-  gap: 4vmin;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: calc(100% - 8vmin);
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  user-select: none;
-}
-
-#image-track::-webkit-scrollbar {
+.modal {
   display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-#image-track > .images {
-  width: 20vmin;
-  height: 50vmin;
-  object-fit: cover;
-  object-position: 100% center;
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
-/* Add this new class to rotate the last six images by 90 degrees */
-.rotate-image .image {
-  transform: rotate(90deg);
-  transform-origin: center;
-}
-
-.rotate-image .rotate-frame-180 .image {
-  transform: rotate(180deg);
-  transform-origin: center;
-}
-
-/* CSS for the grid layout */
-.grid-container.fluid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 15px; /* Gap between pictures */
-  padding: 15px;
-  background-color: #000; /* Black background for the container */
-  border-radius: 10px; /* Optional: rounded corners for the container */
-}
-
-.grid-container.fluid .grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #4f262f; /* Black background for each grid item */
-  padding: 10px; /* Padding inside each grid item */
-  border-radius: 10px; /* Rounded corners for each grid item */
-}
-
-.grid-container.fluid .grid-item .frame {
-  border: none; /* Remove border */
-  padding: 0; /* Remove padding */
-  background-color: transparent; /* Transparent background */
-}
-
-.grid-container.fluid .grid-item .image {
-  width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain aspect ratio */
-  max-width: 250px; /* Make other images larger */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
   cursor: pointer;
-  margin-bottom: 10px; /* Gap between image and description */
 }
 
-.grid-container.fluid .grid-item.rotate-image .image {
-  max-width: 150px; /* Make the last six images smaller */
+.gallery-button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.grid-container.fluid .grid-item .image-name {
-  color: white; /* White text for description */
-  text-align: center; /* Centered text */
+.gallery-span {
+  color: #bbb8b8;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 20px;
 }
 
-/* Rotation classes */
-.rotate-image .image {
-  transform: rotate(90deg);
-  transform-origin: center;
-}
 
-.rotate-frame-180 .image {
-  transform: rotate(180deg);
-  transform-origin: center;
+@media (min-width: 1200px) {
+  .image-gallery {
+    width: 55%;
+  }
+  .gallery-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .white-frame {
+    flex: 0 0 calc(33.333% - 20px);
+  }
 }
-
-@media screen and (max-width: 768px) {
-  .tranding-slide {
+@media (max-width: 768px) {
+  .white-frame {
+    flex: 0 0 calc(100% - 20px);
+  }
+  .larger-name {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+  }
+  .larger-name2 {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+  }
+  .image {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
   }
 
-  .tranding-slide .tranding-slide-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  .image-gallery {
+    width: 90%;
   }
 
-  .cream-container,
-  .cream-container2 {
-    margin-left: 10px;
-    margin-right: 10px;
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
-  .text,
-  .text2 {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-
-  .explore-button,
-  .gallery-button {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  .grid-container {
-    margin-left: 0;
-    margin-right: 0;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .tranding-slider-wrapper {
-    overflow: visible;
-  }
-
-  .tranding-slider {
-    overflow: hidden;
+  #tranding .tranding-slider {
+    height: 30rem;
   }
 
   .tranding-slide {
-    width: 77%;
-    margin: 0 10%;
+    width: 14rem;
+    height: 15rem;
   }
 
-  .tranding-slide-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 
-  .tranding-slider-control .swiper-button-prev,
   .tranding-slider-control .swiper-button-next {
-    display: none;
+    left: 75% !important;
   }
 
-  .swiper-container {
-    overflow: visible;
-    padding: 0;
+  .tranding-slider-control .swiper-button-prev {
+    left: 25% !important;
   }
 
   .swiper-slide:not(.swiper-slide-active),
   .swiper-slide-prev,
   .swiper-slide-next {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: 769px) {
+  .gallery-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
   }
 
+  .tranding-slide {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  .swiper-slide:not(.swiper-slide-active),
   .swiper-slide-prev,
   .swiper-slide-next {
-    width: 33.33%;
-  }
-
-  .swiper-slide-active {
-    width: 33.33%;
-  }
-
-  .swiper-wrapper {
-    justify-content: center;
+    opacity: 0.8;
+    transform: scale(0.9);
   }
 }

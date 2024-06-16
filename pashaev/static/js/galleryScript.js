@@ -1,5 +1,5 @@
 var currentImageIndex = 0;
-var images = document.querySelectorAll(".grid-item .image");
+var images = document.querySelectorAll(".image-gallery .image, .white-frame .image");
 var totalImages = images.length;
 
 function openModal(url, alt) {
@@ -30,16 +30,18 @@ function nextImage() {
 
 function rotateLeft() {
     var modalImg = document.getElementById("modalImg");
-    var currentRotation = parseInt(modalImg.style.transform.replace("rotate(", "").replace("deg)", ""));
-    currentRotation = isNaN(currentRotation) ? 0 : currentRotation;
-    modalImg.style.transform = "rotate(" + (currentRotation - 90) + "deg)";
+    var currentRotation = parseInt(modalImg.dataset.rotation || "0");
+    currentRotation -= 90;
+    modalImg.style.transform = "rotate(" + currentRotation + "deg)";
+    modalImg.dataset.rotation = currentRotation;
 }
 
 function rotateRight() {
     var modalImg = document.getElementById("modalImg");
-    var currentRotation = parseInt(modalImg.style.transform.replace("rotate(", "").replace("deg)", ""));
-    currentRotation = isNaN(currentRotation) ? 0 : currentRotation;
-    modalImg.style.transform = "rotate(" + (currentRotation + 90) + "deg)";
+    var currentRotation = parseInt(modalImg.dataset.rotation || "0");
+    currentRotation += 90;
+    modalImg.style.transform = "rotate(" + currentRotation + "deg)";
+    modalImg.dataset.rotation = currentRotation;
 }
 
 // Close the modal when clicking outside the modal content
@@ -50,33 +52,31 @@ window.onclick = function(event) {
     }
 };
 
-//SLIDER//
-var TrandingSlider = new Swiper('.tranding-slider', {
+// Swiper initialization
+var trandingSlider = new Swiper('.tranding-slider', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
     loop: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     }
-  });
+});
 
-//Gallery topslider
-
-  //Top Slider 5 Frames//
-  function preloadImages() {
+// Preload images
+function preloadImages() {
     const images = [
         "static/Images/homeSlides/IMG26.jpg",
         "static/Images/homeSlides/IMG27.jpg",
@@ -91,51 +91,4 @@ var TrandingSlider = new Swiper('.tranding-slider', {
     });
 }
 
-  const track = document.getElementById("image-track");
-    
-  let isDragging = false;
-  
-  const handleOnDown = e => {
-      if (!e.target.classList.contains('images')) {
-          isDragging = true;
-          track.dataset.mouseDownAt = e.clientX || e.touches[0].clientX;
-      }
-  };
-  
-  const handleOnUp = () => {
-      if (isDragging) {
-          track.dataset.mouseDownAt = "0";  
-          track.dataset.prevPercentage = track.dataset.percentage;
-          isDragging = false;
-      }
-  };
-  
-  const handleOnMove = e => {
-      if (isDragging) {
-          const mouseDelta = parseFloat(track.dataset.mouseDownAt) - (e.clientX || e.touches[0].clientX),
-                maxDelta = window.innerWidth / 2;
-  
-          const percentage = (mouseDelta / maxDelta) * -100,
-                nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
-                nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
-  
-          track.dataset.percentage = nextPercentage;
-  
-          track.animate({
-              transform: `translate(${nextPercentage}%, -50%)`
-          }, { duration: 1200, fill: "forwards" });
-  
-          for (const image of track.getElementsByClassName("images")) {
-              image.animate({
-                  objectPosition: `${100 + nextPercentage}% center`
-              }, { duration: 1200, fill: "forwards" });
-          }
-      }
-  };
-  
-  window.addEventListener('mousedown', handleOnDown);
-  window.addEventListener('touchstart', handleOnDown);
-  window.addEventListener('mouseup', handleOnUp);
-  window.addEventListener('touchend', handleOnUp);
-  window.addEventListener('mousemove', handleOnMove);
-  window.addEventListener('touchmove', handleOnMove);
+preloadImages();
