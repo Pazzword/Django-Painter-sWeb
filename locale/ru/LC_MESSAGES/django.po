@@ -288,8 +288,8 @@ msgid "XI Regional Exhibition 'Southern Russia'"
 msgstr "XI Региональная выставка 'Южная Россия'"
 
 #: pashaev/templates/pashaev/body.html:16
-msgid "Website Title"
-msgstr "Название сайта"
+msgid "Abu Pashaev"
+msgstr "Абу Пашаев"
 
 #: pashaev/templates/pashaev/body.html:23
 msgid "MAIN"
