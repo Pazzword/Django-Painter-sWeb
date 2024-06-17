@@ -156,7 +156,7 @@ div.item:nth-of-type(5) {
 }
 
 .custom-heading {
-    font-size: 24px;
+    font-size: 32px;
     color: #ec994b;
 }
 
@@ -170,24 +170,7 @@ div.item:nth-of-type(5) {
     margin: 50px 0;
 }
 
-.iconbutton {
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    right: 3%;
-    bottom: 3%;
-    cursor: pointer;
-    z-index: 9999;
-}
 
-.iconbutton:hover {
-    background-color: #ec994b;
-}
 
 @media screen and (max-width: 767px) {
     .small-logo {
