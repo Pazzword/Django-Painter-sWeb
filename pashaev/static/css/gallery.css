@@ -307,9 +307,10 @@ body {
   color: #ffffff;
   background-color: #4f262f;
   border: 1px solid #767676;
-  font-size: 40px;
+  font-size: 30px;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
+  border-radius: 20px;
   display: inline-block; /* Ensures that padding and border are applied */
 }
 
