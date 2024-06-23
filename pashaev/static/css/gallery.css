@@ -260,8 +260,18 @@ body {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-width: 600px;
+}
+
+.modal-content.enlarged {
+  width: 90%;
+  max-width: 1000px;  /* Adjust this value as needed */
+}
+
+@media (max-width: 768px) {
+  .modal-content.enlarged {
+      width: 95%;
+  }
 }
 
 .close {
@@ -278,6 +288,10 @@ body {
   width: 100%;
   text-align: center;
   margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .gallery-span {
@@ -286,6 +300,7 @@ body {
   cursor: pointer;
   padding: 20px;
 }
+
 
 
 @media (min-width: 1200px) {
@@ -372,7 +387,7 @@ body {
 
 .modal-content.enlarged {
   width: 90%;
-  max-width: 1200px;  /* Adjust this value as needed */
+  max-width: 1000px;  /* Adjust this value as needed */
 }
 
 @media (max-width: 768px) {
