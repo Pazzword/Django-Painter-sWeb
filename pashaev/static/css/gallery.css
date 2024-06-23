@@ -15,11 +15,17 @@ body {
 }
 
 .white-frame {
+  border: 1px solid #c7c7c7;
   flex: 0 0 calc(50% - 20px);
   margin: 10px;
   background-color: #4f262f;
   padding: 20px;
   border-radius: 20px;
+}
+
+.back-color {
+  background-color: #000000;
+  padding: 15px;
 }
 
 .container-fluid {
