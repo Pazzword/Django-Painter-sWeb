@@ -264,7 +264,7 @@ body {
 }
 
 .modal-content {
-  margin: 2px;
+  margin: auto;
   display: block;
   width: 80%;
   max-width: 600px;
