@@ -47,6 +47,7 @@
             <a class="dropdown-item lang-switcher-link" data-lang="de"><img src="{% static 'Images/de.png' %}" alt="DE" class="lang-icon"> German</a>
         </div>
     </div>
+    
 </nav>
 
 <!-- Main Body -->
@@ -191,8 +192,9 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    // Existing backToTop functionality
     var backToTopButton = document.getElementById("backToTop");
 
     backToTopButton.addEventListener("click", function(event) {
@@ -202,19 +204,32 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.addEventListener("scroll", function() {
         if (window.scrollY > 200) {
-            backToTopButton.style.display = "flex"; // Changed to "flex" to maintain alignment
+            backToTopButton.style.display = "flex";
         } else {
             backToTopButton.style.display = "none";
         }
     });
 
     if (window.scrollY > 200) {
-        backToTopButton.style.display = "flex"; // Changed to "flex" to maintain alignment
+        backToTopButton.style.display = "flex";
     } else {
         backToTopButton.style.display = "none";
     }
+
+    // Language switcher functionality
+    document.querySelectorAll('.lang-switcher-link').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            var selectedLang = this.getAttribute('data-lang');
+            var currentPath = window.location.pathname;
+            var newPath = '/' + selectedLang + currentPath.substring(3); // Assuming language code is two characters long
+            window.location.href = newPath;
+        });
+    });
 });
 
-</script>
+
+        </script>
+        
 </body>
 </html>

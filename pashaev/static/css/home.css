@@ -184,7 +184,7 @@ div.item:nth-of-type(5) {
     }
 
     main#carousel {
-        height: 300px;
+        height: 400px;
     }
 
     div.item {
@@ -198,6 +198,6 @@ div.item:nth-of-type(5) {
     }
 
     .carousel-container {
-        margin: 20px 0;
+        margin: 50px 0;
     }
 }

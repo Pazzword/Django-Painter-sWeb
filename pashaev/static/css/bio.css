@@ -277,35 +277,37 @@ table tr:nth-child(even) {
     .text-center {
         color: #ffffff;
         font-family: "Comfortaa";
+        font-size: 10px;
         text-align: left;
         text-align: center;
+        word-wrap: break-word;
+    }
+    .text-center h1 {
+        font-size: 18px; /* Adjust the size as needed */
+        font: bold;
     }
 
     .white-container p, .top-bio, .sign {
         max-width: 100%;
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         padding: 0 20px;
         text-align: left;
         text-align: center;
+        word-wrap: break-word;
     }
 
     .white-container {
         padding: 20px;
+        font-size: 12px;
+    }
+    table {
+        font-size: 14px;
+        word-wrap: break-word;
     }
 }
 
-@media (max-width: 768px) {
-    table {
-        font-size: 14px;
-    }
-    
-    .white-container p, .top-bio, .sign {
-        max-width: 100%;
-        text-align: center;
-        font-size: 16px;
-    }
-}
+
 
 /* Remove red border used for visualization */
 * {

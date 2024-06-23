@@ -297,10 +297,11 @@ body {
 
 .gallery-span {
   color: #dddddd;
-  border-color: #000000;
+  border: 2px solid #000000; /* Add border width and style along with color */
   font-size: 40px;
   cursor: pointer;
   padding: 20px;
+  display: inline-block; /* Ensures that padding and border are applied */
 }
 
 
