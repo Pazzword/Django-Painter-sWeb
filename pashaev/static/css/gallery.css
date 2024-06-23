@@ -296,7 +296,8 @@ body {
 }
 
 .gallery-span {
-  color: #bbb8b8;
+  color: #dddddd;
+  border-color: #000000;
   font-size: 40px;
   cursor: pointer;
   padding: 20px;
