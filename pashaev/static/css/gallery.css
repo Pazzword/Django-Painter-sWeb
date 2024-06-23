@@ -303,7 +303,8 @@ body {
 }
 
 .gallery-span {
-  color: #dddddd;
+  color: #ffffff;
+  border: 1px solid #000000;
   font-size: 40px;
   cursor: pointer;
   padding: 20px;
