@@ -27,7 +27,7 @@
             <div class="col-lg-3">
                 <img src="{% static 'Images/sign2.png' %}" alt="Abu Pashaev" class="img-fluid rounded">
             </div>
-            <div class="col text-font top-bio text-white">
+            <div class="col text-font top-bio text-white align-items-center">
                 <div class="sign">
                     {% blocktrans %}The artist's series of works, titled 'Esoteric Perspective on Ancestral Symbols,' is a profound exploration inspired by their late mentor, Vsevolod Semenych Grygoriev. Rooted in the artist's journey of self-discovery during the early 90s, these pieces reflect their deep immersion in avant-garde movements, particularly surrealism, as they sought to articulate their unique vision through art.{% endblocktrans %}
                 </div>
@@ -47,26 +47,26 @@
     <hr class="custom-hr" style="border-bottom: 1px solid rgba(255, 255, 255, 0.5); margin: 30px 0;">
   
     <div class="frame-container">
-        <div class="row row-content align-items-center" style="min-height: 500px;">
+        <div class="row row-content align-items-center">
             <div class="col-lg-6 text-center">
                 <h2>{% trans "Pashaev's works"%}</h2>
                 <p>{% trans "Express universal themes of pain, solitude, and the human condition, showcasing his ability to convey deep emotions through a meticulous artistic process." %}</p><br>
                 <p>{% trans "His inaugural exhibition, 'Atomic Heart of My Mom' (1992), marked the beginning of a significant artistic journey. Abu Pashaev emerges as an artist whose profound expressions resonate with the complexities of human existence." %}</p>
             </div>
             <div class="col-lg-6">
-                <div class="slider-container" style="max-width: 90%; height: 500px;">
+                <div class="slider-container">
                     <div class="slides">
-                        <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolStone.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'Images/bio/schoolStone.jpg' %}" alt="School Stone" style="height: 100%;">
+                        <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolStone.jpg' %}')">
+                            <img src="{% static 'Images/bio/schoolStone.jpg' %}" alt="School Stone">
                         </div>
-                        <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolCeramic.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'Images/bio/schoolCeramic.jpg' %}" alt="School Ceramic" style="height: 100%;">
+                        <div class="slide" onclick="enlargeImage('{% static 'Images/bio/schoolCeramic.jpg' %}')">
+                            <img src="{% static 'Images/bio/schoolCeramic.jpg' %}" alt="School Ceramic">
                         </div>
-                        <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper4.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'newspapers/newspaper4.jpg' %}" alt="Newspaper 4" style="height: 100%;">
+                        <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper4.jpg' %}')">
+                            <img src="{% static 'newspapers/newspaper4.jpg' %}" alt="Newspaper 4">
                         </div>
-                        <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper5.jpg' %}')" style="height: 400px;">
-                            <img src="{% static 'newspapers/newspaper5.jpg' %}" alt="Newspaper 5" style="height: 100%;">
+                        <div class="slide" onclick="enlargeImage('{% static 'newspapers/newspaper5.jpg' %}')">
+                            <img src="{% static 'newspapers/newspaper5.jpg' %}" alt="Newspaper 5">
                         </div>
                     </div>
                     <div class="dots-container">
@@ -96,10 +96,10 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 order-lg-1">
-                        <img src="{% static 'Images/sign.png' %}" alt="Freeman 1" class="img rounded" style="width: 65%;">
+                        <img src="{% static 'Images/sign.png' %}" alt="Freeman 1" class="img rounded" style="width: 60%;">
                     </div>
                     <div class="col-lg-6 order-lg-1">
-                        <img src="{% static 'Images/sign.png' %}" alt="Freeman 2" class="img rounded" style="width: 65%;">
+                        <img src="{% static 'Images/sign.png' %}" alt="Freeman 2" class="img rounded" style="width: 60%;">
                     </div>
                 </div>
             </div>

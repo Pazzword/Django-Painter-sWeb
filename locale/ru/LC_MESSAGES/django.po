@@ -117,7 +117,7 @@ msgstr ""
 "отражает тщательное слияние художественного выражения и предковской "
 "наследственности, направленное на запечатление сущности человеческого опыта."
 
-#: pashaev/templates/pashaev/bio.html:51
+#: pashaev/templates/pashaev/bio.html:52
 msgid ""
 "Express universal themes of pain, solitude, and the human "
 "condition, showcasing his ability to convey deep emotions through a "
@@ -127,7 +127,7 @@ msgstr ""
 "природы, демонстрируя его способность передавать глубокие эмоции через "
 "тщательный художественный процесс."
 
-#: pashaev/templates/pashaev/bio.html:52
+#: pashaev/templates/pashaev/bio.html:53
 msgid ""
 "His inaugural exhibition, 'Atomic Heart of My Mom' (1992), marked the "
 "beginning of a significant artistic journey. Abu Pashaev emerges as an "

@@ -49,164 +49,172 @@
     </div>
 </nav>
 
-    <!-- Main Body -->
-    <div style="margin: 5%; margin-left: 13%; margin-right: 13%;">
-        {% block content %}
-        {% endblock %}
-    </div>
-    
-    {% block bottom_section %}
-    <div class="bottom-section" style="background-color: #0a0a23; color: white; padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-10">
-                    <div class="advert billboard-advert mt-2 mb-4">
-                        <div id="div-gpt-ad-mark-1" class="ad-slot" style="" data-google-query-id="">
-                            <div id="google_ads_iframe_/21784358039/PaintersOnline_4__container__"
-                                style="border: 0pt none; width: 970px; height: 0px;"></div>
-                        </div>
+<!-- Main Body -->
+<div style="margin: 5%; margin-left: 13%; margin-right: 13%;">
+    {% block content %}
+    {% endblock %}
+</div>
+
+{% block bottom_section %}
+<div class="bottom-section" style="background-color: #0a0a23; color: white; padding: 20px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-10">
+                <div class="advert billboard-advert mt-2 mb-4">
+                    <div id="div-gpt-ad-mark-1" class="ad-slot" style="" data-google-query-id="">
+                        <div id="google_ads_iframe_/21784358039/PaintersOnline_4__container__"
+                            style="border: 0pt none; width: 970px; height: 0px;"></div>
                     </div>
                 </div>
-    
-                <div class="row-bottom">
-                    <div class="gif-container">
-                        <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
-                    </div>
-                    <div class="gif-container">
-                        <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
-                    </div>
-                    <div class="gif-container">
-                        <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
-                    </div>
-                    <div class="gif-container">
-                        <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
-                    </div>
+            </div>
+
+            <div class="row-bottom">
+                <div class="gif-container">
+                    <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
                 </div>
-                    <div class="page__footer-border">
-                        <div class="row mx-5">
-                            <div class="col-md-4 col-lg-3 col-xl-4">
-                                <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Sections" %}</h6>
-                                <div class="row">
-                                    <div class="col">
-                                        <ul class="list-unstyled">
-                                            <li><a href="{% url 'pashaev_home' %}" target="_self" class="text-secondary">{% trans "Home" %}</a></li>
-                                            <li><a href="{% url 'bio' %}" target="_self" class="text-secondary">{% trans "Biography" %}</a></li>
-                                            <li><a href="{% url 'gallery' %}" target="_self" class="text-secondary">{% trans "Gallery" %}</a></li>
-                                        </ul>
-                                    </div>
+                <div class="gif-container">
+                    <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
+                </div>
+                <div class="gif-container">
+                    <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
+                </div>
+                <div class="gif-container">
+                    <img alt="{% trans "Value creation" %}" src="{% static 'Images/signGif.gif' %}" class="responsive-gif">
+                </div>
+            </div>
+                <div class="page__footer-border">
+                    <div class="row mx-5">
+                        <div class="col-md-4 col-lg-3 col-xl-4">
+                            <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Sections" %}</h6>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="list-unstyled">
+                                        <li><a href="{% url 'pashaev_home' %}" target="_self" class="text-secondary">{% trans "Home" %}</a></li>
+                                        <li><a href="{% url 'bio' %}" target="_self" class="text-secondary">{% trans "Biography" %}</a></li>
+                                        <li><a href="{% url 'gallery' %}" target="_self" class="text-secondary">{% trans "Gallery" %}</a></li>
+                                    </ul>
                                 </div>
                             </div>
-    
-                            <div class="col-md-4 col-lg-3 col-xl-auto">
-                                <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Social" %}</h6>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2">
-                                        <a href="https://www.facebook.com/people/Abu-Pashaev/100026029753414/?paipv=0&eav=AfZstp2mAY3nLwXfvcSPR9WGXj_742llcvpjM4--YMWbLyT1t-YlykTlhR3zpFJSk3o&_rdr" target="_blank" class="d-flex align-items-center text-facebook">
-                                            <span class="fa-stack mr-2">
-                                                <svg class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
-                                                <svg class="svg-inline--fa fa-facebook-f fa-stack-1x text-white" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg>
-                                            </span>
-                                            <div class="text-secondary">{% trans "Follow us on Facebook" %}</div>
-                                        </a>
-                                    </li>
-                                    <li class="mb-2">
-                                        <a href="https://www.instagram.com/pashaev.abu/" target="_blank" class="d-flex align-items-center text-instagram">
-                                            <span class="fa-stack mr-2">
-                                                <svg class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
-                                                <svg class="svg-inline--fa fa-instagram fa-stack-1x text-white" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z"></path></svg>
-                                            </span>
-                                            <div class="text-secondary">{% trans "Follow us on Instagram" %}</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="mailto:892800200853@gmail.com" class="d-flex align-items-center text-primary">
-                                            <span class="fa-stack mr-2">
-                                                <svg class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
-                                                <svg class="svg-inline--fa fa-envelope fa-stack-1x text-white" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg>
-                                            </span>
-                                            <div class="text-secondary">{% trans "Email us" %}</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4 col-xl-2">
-                                <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Contact" %}</h6>
-                                <address class="text-muted">
-                                    NINAROX<br>
-                                    Birmingham, West Midlands<br>
-                                    {% trans "United Kingdom" %}
-                                </address>
-                            </div>
-                            <div class="col-md-4 col-xl-3">
-                                <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Photography" %}</h6>
-                                <div class="text-muted">
-                                    © Magomed Hadisov<br>
-                                    <a href="https://www.facebook.com/profile.php?id=100071599037440&sk=about" target="_blank" class="text-muted">{% trans "More Photography" %}</a>
-                                </div>                                
-                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-3 col-xl-auto">
+                            <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Social" %}</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="https://www.facebook.com/people/Abu-Pashaev/100026029753414/?paipv=0&eav=AfZstp2mAY3nLwXfvcSPR9WGXj_742llcvpjM4--YMWbLyT1t-YlykTlhR3zpFJSk3o&_rdr" target="_blank" class="d-flex align-items-center text-facebook">
+                                        <span class="fa-stack mr-2">
+                                            <svg class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                                            <svg class="svg-inline--fa fa-facebook-f fa-stack-1x text-white" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"></path></svg>
+                                        </span>
+                                        <div class="text-secondary">{% trans "Follow us on Facebook" %}</div>
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://www.instagram.com/pashaev.abu/" target="_blank" class="d-flex align-items-center text-instagram">
+                                        <span class="fa-stack mr-2">
+                                            <svg class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                                            <svg class="svg-inline--fa fa-instagram fa-stack-1x text-white" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z"></path></svg>
+                                        </span>
+                                        <div class="text-secondary">{% trans "Follow us on Instagram" %}</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:892800200853@gmail.com" class="d-flex align-items-center text-primary">
+                                        <span class="fa-stack mr-2">
+                                            <svg class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"></path></svg>
+                                            <svg class="svg-inline--fa fa-envelope fa-stack-1x text-white" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg>
+                                        </span>
+                                        <div class="text-secondary">{% trans "Email us" %}</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-xl-2">
+                            <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Contact" %}</h6>
+                            <address class="text-muted">
+                                NINAROX<br>
+                                Birmingham, West Midlands<br>
+                                {% trans "United Kingdom" %}
+                            </address>
+                        </div>
+                        <div class="col-md-4 col-xl-3">
+                            <h6 class="text-uppercase font-weight-bold text-muted">{% trans "Photography" %}</h6>
+                            <div class="text-muted">
+                                © Magomed Hadisov<br>
+                                <a href="https://www.facebook.com/profile.php?id=100071599037440&sk=about" target="_blank" class="text-muted">{% trans "More Photography" %}</a>
+                            </div>                                
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% endblock %}
-    <div class="iconbutton">
-        <a href="#home">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+</div>
+{% endblock %}
+<div class="iconbutton" id="backToTop">
+    <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="24" height="24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </a>
-    </div>
-    <!-- Footer section -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="footer-content">
-                        <div class="footer-text">{% trans "All works © Abu Pashaev" %}</div>
-                        <div class="footer-icons">
-                            <a href="mailto:info@AbuPashaev.com" target="_blank"><img src="{% static 'Images/logos/mail.png' %}" alt="{% trans "Email" %}"></a>
-                            <a href="https://www.instagram.com/pashaev.abu/" target="_blank"><img src="{% static 'Images/logos/instagram.png' %}" alt="Instagram"></a>
-                            <a href="https://www.instagram.com/pashaev.abu/" target="_blank">
-                                <img src="{% static 'Images/logos/coffee.png' %}" alt="{% trans "Donate" %}">
-                                {% trans "Buy me a Coffee" %}
-                            </a>
-                        </div>
+        </svg>
+    </a>
+</div>
+
+
+<!-- Footer section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-content">
+                    <div class="footer-text">{% trans "All works © Abu Pashaev" %}</div>
+                    <div class="footer-icons">
+                        <a href="mailto:info@AbuPashaev.com" target="_blank"><img src="{% static 'Images/logos/mail.png' %}" alt="{% trans "Email" %}"></a>
+                        <a href="https://www.instagram.com/pashaev.abu/" target="_blank"><img src="{% static 'Images/logos/instagram.png' %}" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/pashaev.abu/" target="_blank">
+                            <img src="{% static 'Images/logos/coffee.png' %}" alt="{% trans "Donate" %}">
+                            {% trans "Buy me a Coffee" %}
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7H4UibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var langSwitchers = document.querySelectorAll(".lang-switcher-link");
-            langSwitchers.forEach(function(switcher) {
-                switcher.addEventListener("click", function(event) {
-                    event.preventDefault();
-                    var lang = this.getAttribute("data-lang");
-                    var path = window.location.pathname;
-                    var segments = path.split("/").filter(Boolean);
-                    if (["en", "ru", "fr", "de"].includes(segments[0])) {
-                        segments[0] = lang;
-                    } else {
-                        segments.unshift(lang);
-                    }
-                    window.location.pathname = "/" + segments.join("/") + "/";
-                });
-            });
-        });
-    </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var backToTopButton = document.getElementById("backToTop");
+
+    backToTopButton.addEventListener("click", function(event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = "flex"; // Changed to "flex" to maintain alignment
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    if (window.scrollY > 200) {
+        backToTopButton.style.display = "flex"; // Changed to "flex" to maintain alignment
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+</script>
 </body>
 </html>

@@ -245,7 +245,7 @@ body {
 .iconbutton {
     width: 48px;
     height: 48px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -254,12 +254,23 @@ body {
     right: 3%;
     bottom: 3%;
     cursor: pointer;
-    z-index: 9999; 
+    z-index: 9999;
+    border: 2px solid transparent; /* Ensure no border overflow */
+    transition: background-color 0.3s ease;
 }
 
 .iconbutton:hover {
     background-color: #ec994b;
 }
+
+.iconbutton svg {
+    width: 48px;
+    height: 48px;
+    stroke: white;
+    border-radius: 50%; /* Ensure the SVG content is circular */
+    transition: stroke 0.3s ease;
+}
+
 
 .row-bottom {
     display: flex;

@@ -212,15 +212,15 @@
 
 <hr class="horizontal-line">
 
-<div class="white-frame-container">
+<div class="white-frame-container enlarged-group">
 <div class="white-frame">
   <div class="row row-content justify-content-center">
-    <div class="col-lg-4 col-md-5">
-      <img src="{% static 'Images/LatestIMG/IMG7.jpg' %}" alt="Image 7" class="image" data-rotation="0" onclick="openModal('{% static 'Images/LatestIMG/IMG7.jpg' %}', 'Image 7')">
+    <div class="col-lg-4 col-md-6">
+      <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="Image 1" class="image" data-rotation="0" onclick="openModal('{% static 'Images/LatestIMG/IMG1.jpg' %}', 'Image 1')">
       <div class="image-name">{% trans "You and Me" %} 2019</div>
     </div>
     <div class="col-lg-4 col-md-6">
-      <img src="{% static 'Images/LatestIMG/IMG26.jpg' %}" alt="Image 26" class="image" data-rotation="0" onclick="openModal('{% static 'Images/LatestIMG/IMG26.jpg' %}', 'Image 26')">
+      <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="Image 2" class="image" data-rotation="0" onclick="openModal('{% static 'Images/LatestIMG/IMG2.jpg' %}', 'Image 2')">
       <div class="image-name">{% trans "Genealogical Tree" %} 1994</div>
     </div>
     <div class="col-lg-4 col-md-6">
@@ -233,8 +233,7 @@
 
 <hr class="horizontal-line">
 
-
-<div class="white-frame-container">
+<div class="white-frame-container enlarged-group">
 <div class="white-frame">
   <div class="row row-content justify-content-center">
     <div class="col-lg-4 col-md-6">
@@ -255,12 +254,11 @@
 
 <hr class="horizontal-line">
 
-
 <div class="image-gallery">
   <div class="gallery-item">
     <div class="frame">
       <div class="image-wrapper">
-      <img src="{% static 'Images/LatestIMG/IMG1.jpg' %}" alt="Image 1" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG1.jpg' %}', 'Image 1')">
+      <img src="{% static 'Images/LatestIMG/IMG7.jpg' %}" alt="Image 7" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG7.jpg' %}', 'Image 7')">
       <div class="image-name">{% trans "Contemplation through Time and Space" %} 1993</div>
       </div>
     </div>
@@ -269,7 +267,7 @@
   <div class="gallery-item">
     <div class="frame">
       <div class="image-wrapper">
-        <img src="{% static 'Images/LatestIMG/IMG2.jpg' %}" alt="Image 2" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG2.jpg' %}', 'Image 2')">
+        <img src="{% static 'Images/LatestIMG/IMG26.jpg' %}" alt="Image 26" class="image" onclick="openModal('{% static 'Images/LatestIMG/IMG26.jpg' %}', 'Image 26')">
         <div class="image-name">{% trans "Goryanka" %} 1994</div>
       </div>
       </div>
@@ -447,16 +445,16 @@
 
 
 
-<div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImg">
-  <div class="gallery-button-container">
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div class="gallery-button-container">
       <span class="gallery-span" onclick="prevImage()">&#8592;</span>
       <span class="gallery-span" onclick="rotateLeft()">&#8634;</span>
       <span class="gallery-span" onclick="rotateRight()">&#8635;</span>
       <span class="gallery-span" onclick="nextImage()">&#8594;</span>
+    </div>
   </div>
-</div>
 
 <hr class="horizontal-line">
 
