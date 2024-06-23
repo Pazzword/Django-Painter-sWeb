@@ -1326,17 +1326,12 @@ msgid "Pashaev's works"
 msgstr "Les œuvres de Pashaev"
 
 #: pashaev/templates/pashaev/bio.html:53
-#, fuzzy
-#| msgid ""
-#| "Pashaev's works express universal themes of pain, solitude, and the human "
-#| "condition, showcasing his ability to convey deep emotions through a "
-#| "meticulous artistic process."
 msgid ""
 "Express universal themes of pain, solitude, and the human condition, "
 "showcasing his ability to convey deep emotions through a meticulous artistic "
 "process."
 msgstr ""
-"Les œuvres de Pashaev expriment des thèmes universels de la douleur, de la "
+"Expriment des thèmes universels de la douleur, de la "
 "solitude et de la condition humaine, montrant sa capacité à transmettre des "
 "émotions profondes à travers un processus artistique minutieux."
 
